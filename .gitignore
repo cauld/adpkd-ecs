@@ -1,0 +1,13 @@
+.DS_Store
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+data/
+pipeline/output/
+*.h5ad
+*.rds
+*.rda
+.ipynb_checkpoints/
+.worktrees/
+.env
