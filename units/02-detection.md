@@ -7,14 +7,14 @@ reads:
   - KILL.md
   - research/01-frozen-labels.md
 must_not:
-  - Change detection thresholds after seeing Gate A
+  - Change detection thresholds after seeing Gate A or Gate S
 ---
 
 # Unit 02 — Gate C detection
 
-**Goal.** *CNR1* detectability in the frozen PT object.
+**Goal.** *CNR1* detectability in the frozen **ADPKD-atlas** PT object.
 
-**Procedure.** Compute fraction of nuclei with count > 0 and n. Write `research/02-detection.md`. Human marks Gate C.
+**Procedure.** Compute fraction of nuclei with count > 0 and n. Write `research/02-detection.md`. Human marks Gate C. Do not interpret DKD *CNR1* here.
 
 **Pass criteria.** `KILL.md` Gate C.
 

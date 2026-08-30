@@ -1,21 +1,27 @@
 # ADPKD-ECS
 
-Public-data computational study of the **endocannabinoid system in autosomal dominant polycystic kidney disease**. No wet lab. v1 is a **kill test**: is *CNR1* upregulation in public ADPKD snRNA-seq restricted to a frozen proximal-tubule / failed-repair state after a composition check?
+Public-data program on the **endocannabinoid system and cannabis-related questions in autosomal dominant polycystic kidney disease**. No wet lab.
 
-This is a **SCENDO-shaped study**, not an ecs-lab harvest loop. The sibling lab (`../ecs-lab`) finds ideas. This folder answers one frozen question.
+This git tree is the **program**. Each confirmatory question is its own seal.
+
+| Study | Question (one line) | Status |
+|---|---|---|
+| **1 — Atlas kill** (this directory’s root SEAL files) | Frozen *CNR1* in ADPKD PT (GSE185948) + DKD specificity (GSE195460) | DRAFT |
+| **2 — Safety map** | [`studies/cannabis-safety/`](studies/cannabis-safety/) — plant vs CBD vs synthetics vs CB1 drugs; Jynarque / Epidiolex | DRAFT Specify |
+| **3 — Chemistry** | Docking / ADMET | Parked in [`EXPLORE.md`](EXPLORE.md) until study 1 Decide |
 
 | Read first | What it is |
 |---|---|
-| [`QUESTION.md`](QUESTION.md) | One sentence |
-| [`KILL.md`](KILL.md) | Named confound + pass/fail |
-| [`CLAIMS.md`](CLAIMS.md) | What we may / may not say |
-| [`PROTOCOL.md`](PROTOCOL.md) | Confirmatory fields (draft until Seal) |
-| [`STATUS.md`](STATUS.md) | You are here |
-| [`docs/briefing/cannabinoid-adpkd-pathways.md`](docs/briefing/cannabinoid-adpkd-pathways.md) | Source briefing (not the protocol) |
+| [`QUESTION.md`](QUESTION.md) | Study 1 one sentence |
+| [`KILL.md`](KILL.md) | Named confounds + pass/fail (study 1) |
+| [`CLAIMS.md`](CLAIMS.md) | What study 1 may / may not say |
+| [`PROTOCOL.md`](PROTOCOL.md) | Study 1 confirmatory fields (draft until Seal) |
+| [`STATUS.md`](STATUS.md) | You are here (study 1) |
+| [`docs/briefing/cannabinoid-adpkd-pathways.md`](docs/briefing/cannabinoid-adpkd-pathways.md) | Source briefing (not a protocol) |
 | [`docs/SUPERPOWERS.md`](docs/SUPERPOWERS.md) | How Science Superpowers maps onto SEAL |
-| [`EXPLORE.md`](EXPLORE.md) | Pathways B–D and other non-confirmatory work |
+| [`EXPLORE.md`](EXPLORE.md) | Parked work including study 3 |
 
-**Protocol seal:** DRAFT. Do not download count matrices to choose the model. Do not plot *CNR1* vs cell type or disease until git seal + OSF submit.
+**Protocol seal (study 1):** DRAFT. Do not download count matrices to choose the model. Do not plot *CNR1* vs cell type or disease until git seal + OSF submit.
 
 Study text is [CC BY 4.0](LICENSE). Third-party datasets stay under their original licenses.
 
@@ -27,12 +33,12 @@ Python **3.12** and [uv](https://docs.astral.sh/uv/):
 uv sync
 ```
 
-The `scrna` extra (scanpy) is for after Seal. Unit 00 is the first runner.
+The `scrna` extra (scanpy) is for after study 1 Seal. Unit 00 is the first runner.
 
-Process kernel: [`.seal/E2E_FLOW.md`](.seal/E2E_FLOW.md). This folder is the study instance: [`E2E_FLOW.md`](E2E_FLOW.md).
+Process kernel: [`.seal/E2E_FLOW.md`](.seal/E2E_FLOW.md). This folder is study 1: [`E2E_FLOW.md`](E2E_FLOW.md).
 
 ## Chat shorthand
 
 **Explore → Question → Kill → Protocol → Clarify → Analyze → Seal (OSF) → Unit → Run → Converge → Decide → Archive.**
 
-Science Superpowers skills fire inside those stages ([`docs/SUPERPOWERS.md`](docs/SUPERPOWERS.md)). After Seal, say **Unit** then **Run**. Do not say Run on outcomes before Seal.
+Science Superpowers skills fire inside those stages ([`docs/SUPERPOWERS.md`](docs/SUPERPOWERS.md)). After Seal, say **Unit** then **Run**. Do not say Run on outcomes before Seal. Do not use study 1 *CNR1* results to write study 2 claims, or the reverse.

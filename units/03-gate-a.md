@@ -8,6 +8,7 @@ reads:
 must_not:
   - Switch A1 vs A2 after seeing CNR1
   - Add genes to the confirmatory test
+  - Peek DKD Gate S to decide A1 vs A2
 ---
 
 # Unit 03 — Gate A
