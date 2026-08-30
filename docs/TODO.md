@@ -10,15 +10,17 @@ Not confirmatory. Check off in git when done.
 - [x] Human reviews root `QUESTION.md` (approved chat 2026-08-30)
 - [x] Clarify (≤5 gaps) if needed
 - [x] Analyze (read-only consistency) in root `STATUS.md`
-- [ ] Human Seal + OSF secondary-data prereg (study 1)
+- [x] Human git Seal 2026-08-30 (`db44b30`)
+- [ ] OSF secondary-data prereg URL (study 1)
 
 ## Study 2 (`studies/cannabis-safety/`) — specify
 
 - [x] Human reviews study 2 `QUESTION.md` (approved chat 2026-08-30)
 - [x] Clarify / Analyze in that study’s `STATUS.md`
-- [ ] Separate OSF prereg when ready
+- [x] Human git Seal 2026-08-30 (`db44b30`)
+- [ ] Separate OSF prereg URL when ready
 
-## After study 1 Seal
+## After study 1 OSF
 
 - [ ] Unit 00 inventory (`research/data-inventory.md`) — both GEO accessions
 - [ ] Units 01–06; human marks C/A/B/S; Decide

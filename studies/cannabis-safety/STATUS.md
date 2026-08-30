@@ -2,13 +2,13 @@
 
 **Study:** ADPKD-ECS study 2 (cannabis / CBD / CB1-drug evidence map)  
 **Program:** repo root [`README.md`](../../README.md)  
-**Protocol seal:** DRAFT — not sealed  
-**Confirmatory git SHA:** none  
+**Protocol seal:** GIT-SEALED 2026-08-30 — **OSF not submitted**  
+**Confirmatory git SHA:** `db44b3086ae8c4d640dc40f44945bcef27ffe6bc`  
 **OSF URL:** none  
-**Current stage:** Plan (Clarify + Analyze recorded). Next: human Seal + OSF.  
+**Current stage:** Seal (git). Blocked on OSF before confirmatory registry/label extraction.  
 **Decision:** none yet  
 **Must not:** load study 1 GEO counts; write *CNR1* claims  
-**Superpowers:** Framing approved 2026-08-30. Survey [`docs/science-superpowers/surveys/2026-08-30-study2-cannabis-safety.md`](../../docs/science-superpowers/surveys/2026-08-30-study2-cannabis-safety.md). Plan [`docs/science-superpowers/plans/2026-08-30-study2-cannabis-safety.md`](../../docs/science-superpowers/plans/2026-08-30-study2-cannabis-safety.md).
+**Superpowers:** Framing approved. Survey and plan frozen with protocol.
 
 ## Ledger
 
@@ -16,31 +16,26 @@
 |---|---|
 | 2026-08-30 | Study directory opened as sibling seal to atlas kill |
 | 2026-08-30 | Human approved framing. Survey + plan. Clarify 1–5. Analyze. No GEO. |
+| 2026-08-30 | Human **Seal**. Git freeze SHA `db44b3086ae8c4d640dc40f44945bcef27ffe6bc`. OSF still open. |
 
-## Blockers before Seal
+## Blockers before confirmatory execution
 
 - [x] Framing (`QUESTION.md`) approved in chat 2026-08-30
 - [x] Clarify recorded in `PROTOCOL.md`
 - [x] Analyze recorded below
-- [ ] Human skims setids / CT.gov API / KDIGO PP 7.3.4.1 and agrees to Seal
-- [ ] Seal date + git SHA
-- [ ] OSF prereg (literature / secondary sources)
+- [x] Human Seal (chat 2026-08-30)
+- [x] Seal date + confirmatory git SHA
+- [ ] OSF prereg URL
 
 ## Analyze
 
-**Ran 2026-08-30 (read-only).**
+**Ran 2026-08-30 (read-only).** Isolation from study 1 holds. Gate R is Unit 01, not a Specify-era API ping.
 
-| Check | Result |
-|---|---|
-| Isolation from study 1 | No GEO paths; CLAIMS forbids *CNR1* gates. |
-| QUESTION vs KILL vs CLAIMS | T/R/L/U map to taxonomy, registry, labels, DDI class. Unstudied default. |
-| PROTOCOL identifiers | DailyMed setids and API v2 params frozen. Gate R ≠ pre-seal ping. |
-| KDIGO | PP 7.3.4.1 + Table 19 required. |
-| Empty trial search | Not recorded as a confirmatory result until Unit 01. |
+## OSF (human)
 
-**Analyze verdict:** Consistent enough to Seal if the human accepts Clarify 1–5.
+Separate registration from study 1. Literature / secondary sources. Map this folder’s `QUESTION.md`, `KILL.md`, `CLAIMS.md`, `PROTOCOL.md`. Disclose DailyMed, ClinicalTrials.gov, and KDIGO 2025 as sources; git SHA `db44b3086ae8c4d640dc40f44945bcef27ffe6bc`. Paste URL here, then Units 00–04 may run as confirmatory.
 
 ## Human remaining
 
-- [ ] Seal + OSF when ready
+- [ ] OSF submit + URL in this file
 - [ ] Drop paywalled PDFs only if needed and allowed

@@ -7,7 +7,7 @@ Chat shorthand: **Explore → Question → Kill → Protocol → Clarify → Ana
 
 Science Superpowers maps onto those stages: [`docs/SUPERPOWERS.md`](docs/SUPERPOWERS.md).
 
-**You are here:** see `STATUS.md`. Protocol **DRAFT**. Do not load count matrices.
+**You are here:** see `STATUS.md`. Protocol **GIT-SEALED**. Do not load count matrices until OSF URL is in `STATUS.md`.
 
 ---
 

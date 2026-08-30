@@ -11,4 +11,4 @@ This repository is a **program** (cannabis / ECS × ADPKD), not a lab. **Study 1
 - Do not mix study 1 and study 2 claims. A *CNR1* gate does not license CBD advice; a label map does not pass Gate A.
 - ecs-lab (`../ecs-lab`) is a Scout lab. Do not harvest literature into this repo as a Scout dump. Study 2 is a **sealed** evidence map, not a nightly crawl. Do not copy Scout chats’ “ignore Superpowers” rule here.
 
-Study 1 Unit 00 (inventory, no expression-vs-CNR1) waits until after study 1 Seal. Until then: specify, clarify, analyze consistency, stop. Study 2 may Specify (search protocol, claims) in parallel **without** loading GEO counts.
+Study 1 Unit 00 (inventory, no expression-vs-CNR1) waits until root `STATUS.md` has git seal **and** OSF URL. Until OSF: specify leftovers only, no count load. Study 2 confirmatory units wait on that study’s OSF URL. Study 2 must not load GEO counts.

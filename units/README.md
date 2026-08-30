@@ -2,11 +2,11 @@
 
 A **unit** is BMAD’s story file without Agile: everything the Operator needs in one place. One unit, one run, one note.
 
-Kill protocol is **draft**. Do not run Units 01–06 until Seal + OSF. Unit 00 is listed so the packet exists; it still waits on Seal (inventory without *CNR1* plots).
+Kill protocol is **git-sealed**. Do not run Units 00–06 until OSF submit is in `STATUS.md` (inventory without *CNR1* plots).
 
 | ID | Title | Gate | Depends on |
 |---|---|---|---|
-| 00 | Data access inventory (both GEO) | — | After Seal |
+| 00 | Data access inventory (both GEO) | — | After OSF |
 | 01 | Freeze PT / failed-repair labels (both atlases) | — | 00 |
 | 02 | *CNR1* detection (ADPKD) | C | 01 |
 | 03 | Gate A contrast | A | 02 |

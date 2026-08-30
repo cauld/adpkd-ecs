@@ -1,6 +1,6 @@
 # PROTOCOL (kill phase)
 
-**Seal status:** DRAFT. After seal, do not edit sections marked CONFIRMATORY without a dated amendment in `STATUS.md`.
+**Seal status:** GIT-SEALED 2026-08-30. Confirmatory content frozen at `db44b3086ae8c4d640dc40f44945bcef27ffe6bc`. After seal, do not edit sections marked CONFIRMATORY without a dated amendment in `STATUS.md`. OSF URL still required in this study’s `STATUS.md` before Unit 01 registry run is confirmatory.
 
 This protocol is **study 2 only** (evidence map). Study 1: repo-root `PROTOCOL.md`. Do not load GSE185948 or GSE195460 counts.
 

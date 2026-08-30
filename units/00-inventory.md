@@ -1,7 +1,7 @@
 ---
 id: 00
 role: Operator
-status: blocked-until-seal
+status: blocked-until-osf
 reads:
   - PROTOCOL.md
 must_not:

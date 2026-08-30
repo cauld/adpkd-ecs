@@ -1,7 +1,7 @@
 ---
 id: 01
 role: Operator
-status: blocked-until-seal
+status: blocked-until-osf
 reads:
   - PROTOCOL.md
   - research/data-inventory.md

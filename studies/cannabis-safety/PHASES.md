@@ -1,6 +1,6 @@
 # PHASES
 
-## Phase 0 — Spec (in progress)
+## Phase 0 — Spec (git-sealed; OSF pending)
 
 | Step | Output |
 |---|---|

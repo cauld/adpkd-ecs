@@ -1,7 +1,7 @@
 ---
 id: 06
 role: Operator
-status: blocked-until-seal
+status: blocked-until-osf
 reads:
   - KILL.md
   - PROTOCOL.md
