@@ -1,6 +1,6 @@
 # PROTOCOL (kill phase)
 
-**Seal status:** GIT-SEALED 2026-08-30. Confirmatory content frozen at `db44b3086ae8c4d640dc40f44945bcef27ffe6bc`. After seal, do not edit sections marked CONFIRMATORY without a dated amendment in `STATUS.md`. OSF URL still required in `STATUS.md` before Unit 00 / count load.
+**Seal status:** GIT-SEALED 2026-08-30. Confirmatory content frozen at `db44b3086ae8c4d640dc40f44945bcef27ffe6bc`. After seal, do not edit sections marked CONFIRMATORY without a dated amendment in `STATUS.md`. OSF: https://osf.io/7g3tn/ (recorded in `STATUS.md` 2026-08-30).
 
 This protocol is **study 1 only**: Pathway A atlas kill (*CNR1* on GSE185948 + locked DKD specificity on GSE195460). Cannabis/CBD/tolvaptan evidence is [`studies/cannabis-safety/PROTOCOL.md`](studies/cannabis-safety/PROTOCOL.md). Docking, dual ligands, ADMET, and MQ1 stay in [`EXPLORE.md`](EXPLORE.md) until a **new** sealed protocol (study 3) after Decide.
 

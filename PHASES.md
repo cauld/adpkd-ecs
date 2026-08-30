@@ -2,7 +2,7 @@
 
 Generic loop: [`.seal/E2E_FLOW.md`](.seal/E2E_FLOW.md). Study instantiation: [`E2E_FLOW.md`](E2E_FLOW.md). This file is the **study 1** checklist.
 
-## Phase 0 — Spec (git-sealed; OSF pending)
+## Phase 0 — Spec (git-sealed; OSF recorded)
 
 | Step | Workflow | Output |
 |---|---|---|
@@ -11,7 +11,7 @@ Generic loop: [`.seal/E2E_FLOW.md`](.seal/E2E_FLOW.md). Study instantiation: [`E
 | 0.3 | Protocol | `PROTOCOL.md` — **draft** |
 | 0.4 | Clarify | **Five gaps in `PROTOCOL.md` (2026-08-30)** |
 | 0.5 | Analyze | **Recorded in `STATUS.md` (2026-08-30)** |
-| 0.6 | **Seal** (human) | git SHA `db44b30` **done**; OSF — **not done** |
+| 0.6 | **Seal** (human) | git SHA `db44b30` **done**; OSF https://osf.io/7g3tn/ **done** |
 
 **Exit:** Kill protocol sealed. Agent will not edit CONFIRMATORY sections.
 

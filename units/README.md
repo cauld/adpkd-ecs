@@ -2,7 +2,7 @@
 
 A **unit** is BMAD’s story file without Agile: everything the Operator needs in one place. One unit, one run, one note.
 
-Kill protocol is **git-sealed**. Do not run Units 00–06 until OSF submit is in `STATUS.md` (inventory without *CNR1* plots).
+Kill protocol is **git-sealed**. OSF: https://osf.io/7g3tn/ . Unit 00 may run (inventory without *CNR1* plots). Units 01–06 follow Unit 00.
 
 | ID | Title | Gate | Depends on |
 |---|---|---|---|

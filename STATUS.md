@@ -3,12 +3,12 @@
 **Study:** ADPKD-ECS study 1 (atlas kill)  
 **Program:** cannabis / ECS × ADPKD — see [`README.md`](README.md)  
 **Flow:** [`.seal/E2E_FLOW.md`](.seal/E2E_FLOW.md) (generic) · [`E2E_FLOW.md`](E2E_FLOW.md) (this study)  
-**Protocol seal:** GIT-SEALED 2026-08-30 — **OSF not submitted**  
+**Protocol seal:** GIT-SEALED 2026-08-30 — OSF recorded  
 **Confirmatory git SHA:** `db44b3086ae8c4d640dc40f44945bcef27ffe6bc`  
-**OSF URL:** none  
-**Current stage:** Seal (git). Blocked on OSF before Unit 00 / count load.  
+**OSF URL:** https://osf.io/7g3tn/ ([overview](https://osf.io/7g3tn/overview))  
+**Current stage:** Unit 00 eligible (inventory). Do not plot *CNR1* vs cell type or disease.  
 **Decision:** none yet  
-**Superpowers:** Framing approved. Survey and plan frozen with protocol. Prereg incomplete until OSF submit.  
+**Superpowers:** Framing approved. Survey and plan frozen with protocol. Study 1 OSF URL recorded 2026-08-30.  
 **Sibling:** [`studies/cannabis-safety/`](studies/cannabis-safety/)
 
 ## Ledger
@@ -21,11 +21,12 @@
 | 2026-08-30 | Human chose program: study 1 + study 2; study 3 after Decide. Gate S added. `studies/cannabis-safety/` opened. |
 | 2026-08-30 | Human approved framings. Prior-work survey + analysis plan. Clarify 1–5. Analyze. **No count matrices loaded.** |
 | 2026-08-30 | Human **Seal**. Git freeze SHA `db44b3086ae8c4d640dc40f44945bcef27ffe6bc`. OSF still open. |
+| 2026-08-30 | Human recorded study 1 OSF URL https://osf.io/7g3tn/ . Unit 00 unblocked. |
 
 ## Confirmatory vs exploratory
 
 Git-sealed: do **not** edit CONFIRMATORY fields in `PROTOCOL.md` / `KILL.md` / `CLAIMS.md` except by dated amendment.  
-Until **OSF URL** is recorded here: do not download count matrices, do not plot *CNR1* vs cell type or disease, do not run Units 01–06. Unit 00 waits on OSF (same rule as `AGENTS.md`).
+OSF URL is recorded. Unit 00 may run (inventory, no *CNR1* plots). Do not plot *CNR1* vs cell type or disease until Unit 01 freeze is committed. Units 02–06 wait on that freeze. Study 2 OSF is separate: https://osf.io/t6rzu/ .
 
 ## Blockers before confirmatory execution
 
@@ -34,7 +35,7 @@ Until **OSF URL** is recorded here: do not download count matrices, do not plot 
 - [x] Clarify (five gaps) recorded in `PROTOCOL.md`
 - [x] Analyze pass recorded below
 - [x] Seal date + confirmatory git SHA (`db44b30`)
-- [ ] OSF secondary-data prereg URL
+- [x] OSF secondary-data prereg URL (https://osf.io/7g3tn/)
 
 ## Analyze
 
@@ -49,9 +50,11 @@ Create a project; choose **OSF Preregistration** → **Secondary Data**. Map `QU
 - Confirmatory *CNR1*-vs-cell-type / *CNR1*-vs-disease plots were **not** used to choose the model.
 - Git SHA `db44b3086ae8c4d640dc40f44945bcef27ffe6bc`.
 
-Paste the registration URL into **OSF URL** above, then Unit 00 may run.
+Recorded: https://osf.io/7g3tn/ ([overview](https://osf.io/7g3tn/overview)). OSF API `/v2/registrations/7g3tn/` returned 401 at record time (private or embargoed is fine; do not treat a sibling project as this lock).
 
 ## Human remaining
 
-- [ ] OSF submit + URL in this file
+- [x] OSF submit + URL in this file
+- [ ] Unit 00 inventory (both GEO); still no *CNR1* plots
 - [ ] Do not start docking / study 3 until study 1 Decide
+- [x] Study 2 OSF (separate registration): https://osf.io/t6rzu/

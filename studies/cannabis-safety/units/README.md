@@ -1,6 +1,6 @@
 # Units (study 2)
 
-Do not run until this study’s Seal + OSF. Do not load GEO counts.
+OSF: https://osf.io/t6rzu/ . Unit 00 may run. Do not load GEO counts. Gate R is Unit 01, not a Specify-era ping.
 
 | ID | Title | Gate |
 |---|---|---|

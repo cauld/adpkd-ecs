@@ -1,7 +1,7 @@
 ---
 id: 00
 role: Operator
-status: blocked-until-osf
+status: ready
 reads:
   - PROTOCOL.md
 must_not:
@@ -16,3 +16,5 @@ must_not:
 **Outputs.** `research/00-sources.md` (create `studies/cannabis-safety/research/` at run).
 
 **Pass criteria.** DailyMed/FDA PI URLs for Jynarque and Epidiolex recorded. KDIGO PDF URL recorded. CT.gov query string copied from `PROTOCOL.md`.
+
+OSF recorded 2026-08-30: https://osf.io/t6rzu/ . May run; still no GEO; no DDI conclusions in this unit.

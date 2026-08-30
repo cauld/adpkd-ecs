@@ -1,13 +1,13 @@
 # PHASES
 
-## Phase 0 — Spec (git-sealed; OSF pending)
+## Phase 0 — Spec (git-sealed; OSF recorded)
 
 | Step | Output |
 |---|---|
 | Question | `QUESTION.md`, `CLAIMS.md` |
 | Kill | `KILL.md` |
 | Protocol | `PROTOCOL.md` |
-| Seal | git SHA + OSF |
+| Seal | git SHA `db44b30` + OSF https://osf.io/t6rzu/ |
 
 ## Phase 1 — After Seal
 

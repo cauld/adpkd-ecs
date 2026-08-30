@@ -11,14 +11,14 @@ Not confirmatory. Check off in git when done.
 - [x] Clarify (≤5 gaps) if needed
 - [x] Analyze (read-only consistency) in root `STATUS.md`
 - [x] Human git Seal 2026-08-30 (`db44b30`)
-- [ ] OSF secondary-data prereg URL (study 1)
+- [x] OSF secondary-data prereg URL (study 1): https://osf.io/7g3tn/
 
 ## Study 2 (`studies/cannabis-safety/`) — specify
 
 - [x] Human reviews study 2 `QUESTION.md` (approved chat 2026-08-30)
 - [x] Clarify / Analyze in that study’s `STATUS.md`
 - [x] Human git Seal 2026-08-30 (`db44b30`)
-- [ ] Separate OSF prereg URL when ready
+- [x] Separate OSF prereg URL: https://osf.io/t6rzu/
 
 ## After study 1 OSF
 

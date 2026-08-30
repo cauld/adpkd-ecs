@@ -1,0 +1,271 @@
+OSF PREGISTRATION PACKET — STUDY 1
+ADPKD-ECS: CNR1 atlas kill (GSE185948 + GSE195460)
+
+Template: Secondary Data Preregistration
+  (Preregistration Template for Secondary Data Analysis v1;
+   van den Akker et al. 2021, https://doi.org/10.15626/MP.2020.2625)
+
+Paste ANSWER into each matching OSF form box. The only OSF Description
+field is the metadata block at the top (not repeated on template items).
+
+Canonical lock: git SHA db44b3086ae8c4d640dc40f44945bcef27ffe6bc
+  QUESTION.md, CLAIMS.md, KILL.md, PROTOCOL.md (repo root)
+  https://github.com/cauld/adpkd-ecs
+
+Written 2026-08-30. Count matrices not loaded. CNR1 not plotted vs cell type
+or disease to choose the model.
+
+================================================================
+OSF METADATA (not a van den Akker item)
+================================================================
+
+OSF FIELD: Title
+ANSWER:
+Frozen CNR1 in ADPKD proximal-tubule / failed-repair snRNA-seq (GSE185948) with composition check and DKD specificity (GSE195460): a secondary-data kill test. Dataset names are in the title because this is a secondary analysis.
+
+OSF FIELD: Description
+OSF PROMPT: Write a detailed description of your research project, including its purpose and any expected outcomes. This should give readers a comprehensive overview of your work.
+ANSWER:
+This registration is study 1 of the ADPKD-ECS program (https://github.com/cauld/adpkd-ecs): a pre-specified secondary analysis of public kidney snRNA-seq atlases. It is a kill test of a published computational claim about CNR1, not a treatment study and not a chemistry campaign.
+
+Purpose. Hinden et al. (Mol Med 2026) reported disease-associated CNR1 upregulation with enrichment in proximal-tubule / failed-repair epithelium, using GSE185948 (ADPKD) and a DKD comparison. Their primary snRNA statistic averaged CNR1 across all cell types per sample, which is vulnerable to changing cell-type composition. A 2026 source briefing treated PT-restricted, ADPKD-specific CNR1 as a license for later CB1-antagonist chemistry. This study audits that map under a frozen protocol (git SHA db44b3086ae8c4d640dc40f44945bcef27ffe6bc): define PT / failed-repair without using CNR1 as a marker; test CNR1 inside that state; check composition; and, only if ADPKD within-PT induction is supported, test whether the same within-PT upshift appears in diabetic kidney disease (GSE195460).
+
+Data. Cross-sectional public GEO snRNA-seq: GSE185948 (Muto et al. 2022; ADPKD vs control) and GSE195460 Cell Ranger RNA matrices (Wilson et al. 2022; DKD vs control). Count matrices will not be loaded until this OSF URL is recorded. A sibling registration (study 2) maps cannabis/CBD/tolvaptan labels and trials; it is a different question and must not be mixed with these GEO hypotheses.
+
+Expected outcomes. Human-owned gates (detectability; within-PT ADPKD vs control or a map-only fallback; composition wall; DKD specificity) will either pass or fail as specified in the sealed KILL.md. A clean negative is a complete result: the briefing’s PT-restricted, disease-induced CNR1 story would be reported as not supported in these atlases. Public donor n is a large-effect test only; a fail does not prove CNR1 is unchanged. Passing does not license cannabis or CB1-drug advice, a claim that CB1 causes cysts, or docking/chemistry. Study 3 (docking) requires a new sealed protocol after Decide.
+
+OSF FIELD: Subject categories (bepress; type the leaf name in OSF’s subject picker)
+Select these (search the last segment if the tree is collapsed):
+  1. Medicine and Health Sciences > Medical Specialties > Nephrology
+  2. Life Sciences > Bioinformatics
+  3. Life Sciences > Genetics and Genomics > Computational Biology
+  4. Life Sciences > Genetics and Genomics > Genomics
+  5. Life Sciences > Cell and Developmental Biology > Cell Biology
+  6. Medicine and Health Sciences > Medical Sciences > Medical Cell Biology
+  7. Medicine and Health Sciences > Medical Specialties > Endocrinology, Diabetes, and Metabolism
+Do not add Pharmacy / cannabis-treatment subjects here; that is study 2.
+
+OSF FIELD: Tags (free text; paste one per tag or comma-separated as the UI allows)
+adpkd
+pkd
+cnr1
+cb1
+endocannabinoid-system
+snrna-seq
+single-nucleus
+geo
+gse185948
+gse195460
+proximal-tubule
+failed-repair
+diabetic-kidney-disease
+composition-bias
+preregistration
+secondary-data-analysis
+kill-test
+
+================================================================
+STUDY INFORMATION
+================================================================
+
+ITEM 1. Title
+ANSWER:
+Frozen CNR1 in ADPKD proximal-tubule / failed-repair snRNA-seq (GSE185948) with composition check and DKD specificity (GSE195460): a secondary-data kill test. Dataset names are in the title because this is a secondary analysis.
+
+ITEM 2. Authors
+ANSWER:
+Registrant: complete legal name and ORCID on the OSF form. Repository: github.com/cauld. No co-authors listed in the study files at freeze.
+
+ITEM 3. Research questions
+ANSWER:
+RQ1. After freezing proximal-tubule / failed-repair epithelium without CNR1 as a marker, is CNR1 higher in ADPKD than in control inside that state in GSE185948, after a composition check?
+RQ2. Is that within-PT induction absent in diabetic kidney disease under the same freeze (GSE195460)?
+(One-sentence form: After freezing proximal-tubule / failed-repair epithelium without CNR1 as a marker, is CNR1 higher in ADPKD than in control inside that state in GSE185948 (after a composition check), and is that within-PT induction absent in diabetic kidney disease under the same freeze (GSE195460)?)
+
+ITEM 4. Hypotheses
+ANSWER:
+Framework: frequentist NHST / 95% CI on a pre-specified contrast. Human marks gates in KILL.md. Sole confirmatory gene: CNR1.
+
+Gate C (detectability, ADPKD atlas):
+  H0: Detection of CNR1 (count > 0) is < 1% of nuclei in the frozen PT / failed-repair object, or that object has n < 100.
+  H1: Detection >= 1% and n >= 100.
+  If C fails: do not run Gate A or Gate S as confirmatory localization / induction / specificity.
+  Rationale: sparse dropout can make CNR1 “dark”; localization claims require a frozen PT object with enough detection.
+
+Gate A1 (if Unit 00 finds >= 3 ADPKD and >= 3 control samples):
+  H0: Within frozen PT / failed-repair only, 95% CI for mean CNR1 (ADPKD minus control) includes 0, or ADPKD is not higher.
+  H1: CI excludes 0 and ADPKD mean is higher.
+  Rationale: published claim (Hinden et al. Mol Med 2026) is disease-induced CNR1 in PT; their primary snRNA statistic averaged all cell types per sample (composition-vulnerable). This tests within-PT induction.
+
+Gate A2 (only if A1 ineligible):
+  H0: Within ADPKD samples, 95% CI for CNR1 (frozen PT minus other epithelium) includes 0, or PT is not higher.
+  H1: CI excludes 0 and PT is higher.
+  If A1 was eligible, A2 is descriptive only and cannot pass Gate A.
+  Rationale: map-only localization if controls are insufficient; not disease-specific induction.
+
+Gate S (only if C passed AND A1 passed AND >= 3 DKD and >= 3 control samples):
+  H0_S (specificity NOT supported): within frozen DKD-atlas PT, 95% CI for CNR1 (DKD minus control) excludes 0 and DKD is higher.
+  H1_S (specificity supported): that CI includes 0, OR DKD mean is not higher.
+  C_S eligibility: same 1% / n>=100 detection on DKD PT object; if C_S fails, S is ineligible (not an S pass).
+  S cannot pass or rescue Gate A.
+  Rationale: named confound 3 — generic injury / DKD recapitulation.
+
+Gate B (only if Gate A passed; cannot rescue an A fail):
+  B1 (protocol): Gate A used the frozen PT object, not all nuclei. Fail if all cells were scored.
+  B2 (if A1 ran): inside ADPKD PT, failed-repair vs non-injured PT; report 95% CI. Does not reverse A1. If failed-repair CNR1 is lower, do not claim restriction to failed-repair.
+  B3 (diagnostic only): sample-level epithelial mean CNR1 vs p_PT; cannot pass A.
+
+Named confounds: (1) composition; (2) constitutive PT marker; (3) generic injury (same upshift in DKD).
+
+================================================================
+DATA DESCRIPTION
+================================================================
+
+ITEM 5. Dataset
+ANSWER:
+(1) GSE185948, Muto et al. Nat Commun 2022: adult human ADPKD vs control kidney snRNA-seq (cross-sectional nuclei). Prefer GSE185948_metadata_RNA.csv.gz and GSE185948_count_RNA.rds.gz. Hinden et al. 2026 reported n=8 ADPKD and n=5 controls; Unit 00 records actual n.
+(2) GSE195460, Wilson et al. Nat Commun 2022: DKD vs control snRNA-seq. Confirmatory files are Cell Ranger filtered_feature_bc_matrix.h5 only: Control1-6, DN1-5 as listed in PROTOCOL.md. Do not use GSE131882 zUMIs dgecounts.rds.gz. Do not require GSE195460_RAW.tar. Hinden reported n=5 DKD and n=6 controls; Unit 00 records actual n.
+Subset: frozen PT / failed-repair epithelium vs other renal epithelium as defined in PROTOCOL.md. Immune, endothelial, fibroblast, and parietal epithelium excluded from both sides of Gate A and Gate S.
+snATAC from either accession is exploratory and cannot pass A or S.
+
+ITEM 6. Openness of data
+ANSWER:
+Public GEO. No DUA. Third-party licenses remain with NCBI/GEO and the original papers. Study text is CC BY 4.0.
+
+ITEM 7. Access to data
+ANSWER:
+https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE185948
+https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE195460
+Exact h5 filenames: PROTOCOL.md confirmatory dataset table.
+
+ITEM 8. Date(s) data were accessed
+ANSWER:
+GEO landing pages (filenames, sizes, license; column names only; no count load; no CNR1 plots): Specify phase 29–30 August 2026.
+Count matrices: not downloaded as of this packet. First confirmatory download is Unit 00 after OSF URL is in STATUS.md.
+Registrant (github.com/cauld): accessed metadata/landing pages on those dates; will use the GEO files downloaded after OSF for analyses.
+
+ITEM 9. Data collection
+ANSWER:
+Original collection: Muto et al. 2022 (ADPKD ESKD cyst-cup samples vs controls); Wilson et al. 2022 (DKD vs control cortex / nephrectomy or donor tissue as described in those papers). This study does not re-collect tissue. Sampling is late-stage / biopsy-enriched and not a population survey of all ADPKD.
+GSE185948: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE185948
+GSE195460: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE195460
+
+ITEM 10. Data codebook
+ANSWER:
+Author metadata CSV for GSE185948 (shipped on GEO). GSE195460: Cell Ranger h5; cell-type labels if a metadata table exists on GEO, else marker fallback. Paper ontologies (Muto PT / FR-PTC; Wilson PT_VCAM1 etc.) are search aids only; Unit 00 records exact metadata tokens. GEO Series pages and PROTOCOL.md gene lists are the relevant documentation.
+
+================================================================
+VARIABLES
+================================================================
+
+ITEM 11. Manipulated variable(s)
+ANSWER:
+Not applicable. Observational public atlases. No treatment assignment.
+
+ITEM 12. Measured variable(s)
+ANSWER:
+Outcome (confirmatory): CNR1 counts. Estimator when n>=3 per group: sum raw counts per donor in contrast cells, drop donor x PT bins with <10 nuclei, log1p(CPM), Welch t on donor means. 95% CI is the pass metric. Wilcoxon rank-sum (nucleus-level) only if n<3 per group; then pass = two-sided p<0.05 AND Hodges-Lehmann in hypothesized direction; Cliff's delta reported, not the pass metric.
+Grouping (categorical): disease label (ADPKD vs control; DKD vs control); frozen PT / failed-repair vs other epithelium.
+Assignment-only (not the kill): PT identity LRP2, CUBN, SLC34A1, SLC13A3; injured/failed-repair VCAM1, HAVCR1, PROM1. Prefer author labels when present.
+Other epithelium markers (substring, first match): SLC12A1, SLC12A3, AQP2, CALB1, SLC26A7.
+Descriptive ECS panel (cannot pass A or S): CNR2, GPR55, FAAH, MGLL, NAPEPLD, DAGLA, DAGLB, TRPV1.
+Must not use CNR1 or glycolysis genes HK2, PKM, LDHA to define PT.
+Composition diagnostic B3: sample-level epithelial mean CNR1 vs p_PT (fraction PT among epithelial nuclei); cannot pass A.
+No EFA/CFA scales.
+
+ITEM 13. Inclusion and exclusion criteria
+ANSWER:
+Include: nuclei in GSE185948 and the listed GSE195460 RNA h5s that pass author QC as shipped (no new QC hunt after seeing CNR1).
+Exclude from both sides of A and S: immune, endothelial, fibroblast, parietal epithelium.
+Exclude donor x PT bins with <10 nuclei from the pseudobulk t-test.
+Expected n: Unit 00; literature reported ~8 vs 5 (ADPKD/control) and ~5 vs 6 (DKD/control). Large-effect tests only.
+
+ITEM 14. Missing data
+ANSWER:
+Dropout / zeros in snRNA-seq are expected for CNR1 (sparse). Gate C / C_S require >=1% nuclei with count>0 and n>=100 in the frozen PT object. No imputation of CNR1. Donors missing disease labels are dropped from A1/S (recorded in Unit 00). Expected n unchanged from Item 13 until Unit 00.
+
+ITEM 15. Outliers
+ANSWER:
+No CNR1-based outlier deletion. No post-hoc winsorizing of CNR1 to pass a gate. Invalid barcodes / empty droplets: only as already applied in the GEO processed matrices, not retuned after seeing CNR1. Expected n remains the public donor n in Item 13.
+
+ITEM 16. Sampling weights
+ANSWER:
+None. No claim of representativeness of all people with ADPKD.
+
+================================================================
+KNOWLEDGE OF DATA
+================================================================
+
+ITEM 17. Previous work
+ANSWER:
+This repository (adpkd-ecs) drafted the protocol using GEO landing pages and published papers. No prior confirmatory CNR1-vs-cell-type or CNR1-vs-disease analysis has been run in this repo.
+Published work on these datasets (not by this repo): Muto et al. 2022 (atlas, not ECS); Wilson et al. 2022 (DKD atlas); Hinden et al. Mol Med 2026 (ECS including all-cell CNR1 on GSE185948 and DKD comparison). This study is a registered audit of Hinden's computational CNR1 map, not a first discovery.
+GEO overviews: the Series pages in Item 7.
+
+ITEM 18. Prior knowledge
+ANSWER:
+Known from papers and GEO HTML, not from our count-matrix DE:
+- Hinden et al. 2026 reported CNR1 up and enrichment in PT / FR-PTC, and little ECS change in DKD; their snRNA primary statistic averaged expression across all cell types per sample.
+- Human CB1 protein in that paper did not differ significantly (not a v1 confirmatory test here).
+- Muto 2022: most ADPKD PT adopt a failed-repair signature; composition of cell types differs by disease.
+- Approximate donor n as reported by Hinden (8 vs 5; 5 vs 6).
+- Marker genes for PT / FR-PTC are standard in kidney atlases (Kirita 2020; Muto 2021/2022).
+Unknown / not used to choose the model: our own within-PT CNR1 ADPKD-vs-control CI; our own Gate S CI.
+
+================================================================
+ANALYSES
+================================================================
+
+ITEM 19. Statistical model
+ANSWER:
+See PROTOCOL.md. Seed 20260829 only if unsupervised clustering fallback is required (HVGs excluding CNR1 and the descriptive ECS panel).
+Sequence: Unit 00 inventory (no CNR1 plots) -> Unit 01 freeze BOTH atlases -> Unit 02 Gate C -> Unit 03 Gate A (A1 if eligible else A2; do not switch after seeing CNR1) -> Unit 04 Gate B if A passed -> Unit 05 Gate S if A1 passed and S eligible -> Unit 06 human Decide.
+Freeze order: both label maps committed in git before any CNR1 differential on either atlas.
+One confirmatory gene. Descriptive ECS: same contrast, FDR, narrative only.
+Code: not yet written; will follow PROTOCOL after OSF. Simulated Welch pseudobulk recovery of a planted effect is required before real CNR1 DE (analysis plan), on simulated data only.
+No interactions as confirmatory. No post-hoc that can pass A or S.
+
+ITEM 20. Effect size
+ANSWER:
+No numeric smallest effect of interest beyond the CI rule: A1 pass requires ADPKD minus control CI excluding 0 with ADPKD higher. Public n is powered only for large donor-level effects. A fail does not prove absence of induction (CLAIMS.md).
+
+ITEM 21. Power
+ANSWER:
+Fixed public n. Qualitative: n~8 vs 5 (or 5 vs 6) is below usual RNA-seq floors for modest fold changes. No post-hoc power after seeing CNR1. If underpowered, report CI and Decide table; do not switch to nucleus Wilcoxon after seeing A1 when n>=3.
+
+ITEM 22. Inference criteria
+ANSWER:
+Human-owned pass/fail per KILL.md.
+C: detection >=1% and n>=100.
+A1: 95% CI excludes 0 and ADPKD higher; sole gene CNR1; PT object only.
+A2: only if A1 ineligible; CI excludes 0 and PT higher.
+S pass: DKD-control CI includes 0 OR DKD not higher.
+S fail: CI excludes 0 and DKD higher.
+Two-sided tests. No multiple-testing correction for the one confirmatory gene.
+Decide table in KILL.md maps combinations to stop / map-only / induction +/- specificity. Docking is not licensed by this registration.
+
+ITEM 23. Assumptions
+ANSWER:
+If RNA objects will not load: human may opt into Superpowers feasibility mode; still not confirmatory. If CNR1 absent from the ADPKD feature index: amend or stop; do not run A. If author labels missing: marker fallback in PROTOCOL.md. If clustering unavoidable: frozen Scanpy defaults, random_state=20260829, resolution 0.5, HVGs excluding CNR1 and ECS panel; map clusters to PT by PT-identity genes only. Do not change Gate C thresholds after seeing Gate A. Do not add edgeR as a second pass route.
+
+ITEM 24. Sensitivity
+ANSWER:
+Gate B2 (failed-repair vs non-injured PT) is reported if A1 ran; it does not reverse A1. B3 is diagnostic only. No alternate confirmatory estimator. No all-cell mean as a rescue.
+
+ITEM 25. Exploratory
+ANSWER:
+Descriptive ECS panel; snATAC at CNR1; GSE7869; docking; cannabis/CBD/tolvaptan counseling (separate study). Label clearly exploratory. Cannot pass A or S.
+
+================================================================
+CLAIMS CEILING (not an OSF numbered item; paste into notes if a notes box exists)
+================================================================
+If tests pass, we may claim only the language in CLAIMS.md (detection; A1 induction or A2 map-only; freeze wall; S specificity only if A1 and S passed).
+We will not claim: patients should start/stop cannabis or CB1 drugs; CB1 causes cysts; any compound treats ADPKD; CBD contraindicated with tolvaptan; A2 as induction; S as uniqueness among all CKD; a fail as proof CNR1 is unchanged.
+
+================================================================
+STATEMENT OF INTEGRITY
+================================================================
+
+ITEM 26. Integrity statement
+ANSWER:
+The registrant filled this preregistration to the best of their knowledge. No other OSF preregistration exists for the same hypotheses and these GEO count analyses. Study 2 (cannabis/CBD evidence map) is a different question and a different registration. Confirmatory CNR1-vs-cell-type / CNR1-vs-disease plots were not used to choose this model.

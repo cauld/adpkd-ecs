@@ -1,7 +1,7 @@
 ---
 id: 00
 role: Operator
-status: blocked-until-osf
+status: ready
 reads:
   - PROTOCOL.md
 must_not:
@@ -35,4 +35,4 @@ must_not:
 
 ## Notes (after run)
 
-- Not run. Waiting on Seal.
+- Not run. OSF recorded 2026-08-30 (https://osf.io/7g3tn/). Inventory may proceed; still no *CNR1* plots.

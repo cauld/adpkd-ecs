@@ -6,8 +6,8 @@ This git tree is the **program**. Each confirmatory question is its own seal.
 
 | Study | Question (one line) | Status |
 |---|---|---|
-| **1 — Atlas kill** (this directory’s root SEAL files) | Frozen *CNR1* in ADPKD PT (GSE185948) + DKD specificity (GSE195460) | GIT-SEALED; OSF pending |
-| **2 — Safety map** | [`studies/cannabis-safety/`](studies/cannabis-safety/) — plant vs CBD vs synthetics vs CB1 drugs; Jynarque / Epidiolex | GIT-SEALED; OSF pending |
+| **1 — Atlas kill** (this directory’s root SEAL files) | Frozen *CNR1* in ADPKD PT (GSE185948) + DKD specificity (GSE195460) | GIT-SEALED; [OSF](https://osf.io/7g3tn/) |
+| **2 — Safety map** | [`studies/cannabis-safety/`](studies/cannabis-safety/) — plant vs CBD vs synthetics vs CB1 drugs; Jynarque / Epidiolex | GIT-SEALED; [OSF](https://osf.io/t6rzu/) |
 | **3 — Chemistry** | Docking / ADMET | Parked in [`EXPLORE.md`](EXPLORE.md) until study 1 Decide |
 
 | Read first | What it is |
@@ -15,13 +15,13 @@ This git tree is the **program**. Each confirmatory question is its own seal.
 | [`QUESTION.md`](QUESTION.md) | Study 1 one sentence |
 | [`KILL.md`](KILL.md) | Named confounds + pass/fail (study 1) |
 | [`CLAIMS.md`](CLAIMS.md) | What study 1 may / may not say |
-| [`PROTOCOL.md`](PROTOCOL.md) | Study 1 confirmatory fields (git-sealed; OSF pending) |
+| [`PROTOCOL.md`](PROTOCOL.md) | Study 1 confirmatory fields (git-sealed; [OSF](https://osf.io/7g3tn/)) |
 | [`STATUS.md`](STATUS.md) | You are here (study 1) |
 | [`docs/briefing/cannabinoid-adpkd-pathways.md`](docs/briefing/cannabinoid-adpkd-pathways.md) | Source briefing (not a protocol) |
 | [`docs/SUPERPOWERS.md`](docs/SUPERPOWERS.md) | How Science Superpowers maps onto SEAL |
 | [`EXPLORE.md`](EXPLORE.md) | Parked work including study 3 |
 
-**Protocol seal (study 1):** GIT-SEALED 2026-08-30 (`db44b30`). Do not download count matrices or plot *CNR1* vs cell type or disease until **OSF submit** is recorded in `STATUS.md`.
+**Protocol seal (study 1):** GIT-SEALED 2026-08-30 (`db44b30`). OSF: https://osf.io/7g3tn/ . Unit 00 may inventory GEO files. Do not plot *CNR1* vs cell type or disease until the Unit 01 freeze is committed.
 
 Study text is [CC BY 4.0](LICENSE). Third-party datasets stay under their original licenses.
 

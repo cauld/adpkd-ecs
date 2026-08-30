@@ -1,0 +1,264 @@
+OSF PREGISTRATION PACKET — STUDY 2
+ADPKD-ECS: cannabis / CBD / synthetic cannabinoids / CB1-drug evidence map
+
+Template: Secondary Data Preregistration
+  (Preregistration Template for Secondary Data Analysis v1;
+   van den Akker et al. 2021, https://doi.org/10.15626/MP.2020.2625)
+
+Paste ANSWER into each matching OSF form box. The only OSF Description
+field is the metadata block at the top (not repeated on template items).
+
+This is not a GEO or p-value study. Several analysis items are N/A by design.
+
+Canonical lock: git SHA db44b3086ae8c4d640dc40f44945bcef27ffe6bc
+  studies/cannabis-safety/QUESTION.md, CLAIMS.md, KILL.md, PROTOCOL.md
+  https://github.com/cauld/adpkd-ecs
+
+Written 2026-08-30. ClinicalTrials.gov Gate R has not been run.
+A Specify-era registry ping is not Gate R. GEO counts are out of scope.
+
+================================================================
+OSF METADATA (not a van den Akker item)
+================================================================
+
+OSF FIELD: Title
+ANSWER:
+What can be stated, and what must remain unknown, about cannabis, CBD, synthetic cannabinoids, and CB1-targeting drugs in people with ADPKD, including co-use with tolvaptan: a pre-specified secondary-source evidence map (FDA labels, ClinicalTrials.gov, KDIGO 2025).
+
+OSF FIELD: Description
+OSF PROMPT: Write a detailed description of your research project, including its purpose and any expected outcomes. This should give readers a comprehensive overview of your work.
+ANSWER:
+This registration is study 2 of the ADPKD-ECS program (https://github.com/cauld/adpkd-ecs): a pre-specified evidence map of cannabis, CBD, synthetic cannabinoids, and CB1-targeting drugs in people with ADPKD, including co-use with tolvaptan. It uses existing public sources (FDA/DailyMed labels, ClinicalTrials.gov, KDIGO 2025, and published human evidence). It is not a GEO CNR1 analysis (that is a separate registration, study 1), not a docking or CYP model, and not a recommendation to start or stop cannabis.
+
+Purpose. People with ADPKD use cannabis/CBD for pain; KDIGO already tells clinicians to counsel about cannabis; there is no ADPKD cannabinoid RCT identified at protocol freeze. Informal briefing text overstated CBD as a potent CYP3A4 inhibitor versus Jynarque (tolvaptan). This study locks a four-class exposure taxonomy, a frozen ClinicalTrials.gov query, label-bounded facts for Jynarque and Epidiolex, and a classification of CBD–tolvaptan co-administration as documented pair PK, labeled interaction, analog-only, or unstudied. Protocol freeze: git SHA db44b3086ae8c4d640dc40f44945bcef27ffe6bc.
+
+Expected outcomes. Gate T: plant cannabis, CBD (OTC vs prescription when sources allow), synthetic cannabinoids, and CB1-targeting drugs remain separate classes. Gate R: the frozen registry query returns zero ADPKD/PKD studies with a cannabis/cannabinoid intervention, or an honest NCT list (no silent dropping). Gate L: Jynarque and Epidiolex labels are quoted for CYP3A / hepatotoxicity, Epidiolex midazolam and P-gp statements, and whether each names the other product. Gate U: CBD–tolvaptan is classified unstudied unless a dedicated pair PK study or a labeled interaction is found at run time; analog data (midazolam, everolimus, tacrolimus, grapefruit) cannot be rewritten as “contraindicated” or “safe.” An empty trial search and an unstudied pair are complete findings. The paper is an uncertainty map with a claims ceiling, not a demonstration that cannabis is safe or effective in ADPKD.
+
+OSF FIELD: Subject categories (bepress; type the leaf name in OSF’s subject picker)
+Select these (search the last segment if the tree is collapsed):
+  1. Medicine and Health Sciences > Medical Specialties > Nephrology
+  2. Medicine and Health Sciences > Pharmacy and Pharmaceutical Sciences
+  3. Medicine and Health Sciences > Medical Sciences > Medical Pharmacology
+  4. Life Sciences > Pharmacology, Toxicology and Environmental Health > Pharmacology
+  5. Medicine and Health Sciences > Pharmacy and Pharmaceutical Sciences > Pharmacy Administration, Policy and Regulation
+Do not add Genomics / snRNA-seq subjects here; that is study 1. Do not select “Clinical Trials” under Statistics and Probability (wrong branch).
+
+OSF FIELD: Tags (free text; paste one per tag or comma-separated as the UI allows)
+adpkd
+pkd
+cannabis
+cbd
+cannabidiol
+epidiolex
+jynarque
+tolvaptan
+cb1
+synthetic-cannabinoids
+drug-drug-interaction
+dailymed
+clinicaltrials.gov
+kdigo
+evidence-map
+preregistration
+secondary-data-analysis
+label-map
+
+================================================================
+STUDY INFORMATION
+================================================================
+
+ITEM 1. Title
+ANSWER:
+What can be stated, and what must remain unknown, about cannabis, CBD, synthetic cannabinoids, and CB1-targeting drugs in people with ADPKD, including co-use with tolvaptan: a pre-specified secondary-source evidence map (FDA labels, ClinicalTrials.gov, KDIGO 2025).
+
+ITEM 2. Authors
+ANSWER:
+Registrant: complete legal name and ORCID on the OSF form. Repository: github.com/cauld. No co-authors listed in the study files at freeze.
+
+ITEM 3. Research questions
+ANSWER:
+Using FDA labels, trial registries, KDIGO, and published human evidence, what can be stated—and what must remain unknown—about cannabis, CBD, synthetic cannabinoids, and CB1-targeting drugs in people with ADPKD, including co-use with tolvaptan?
+RQ-T. Can the four exposure classes be kept separate (plant cannabis; CBD OTC vs prescription when sources allow; synthetic cannabinoids; CB1-targeting drugs)?
+RQ-R. Does ClinicalTrials.gov contain any study meeting the frozen ADPKD/PKD condition query AND a cannabis/cannabinoid intervention query?
+RQ-L. What do the frozen Jynarque and Epidiolex labels actually say about CYP3A, hepatotoxicity, midazolam/P-gp, and whether each names the other product?
+RQ-U. Is CBD–tolvaptan co-administration documented pair PK, a labeled interaction, analog-only, or unstudied?
+
+ITEM 4. Hypotheses
+ANSWER:
+This is a structured evidence map, not NHST. “Hypotheses” are pre-specified classification rules (KILL.md). Human marks pass/fail.
+
+Named confounds:
+  (1) Collapsed exposure — plant cannabis, CBD, synthetics, and CB1 drugs treated as one intervention.
+  (2) Label laundering — a theoretical CYP3A4 story reported as a documented CBD–tolvaptan interaction, or “no CYP3A4 effect on midazolam” reported as proof the pair is safe.
+
+Gate T (taxonomy):
+  Pass: results have at least four rows/sections: (i) plant cannabis, (ii) CBD (OTC vs prescription distinguished if sources allow), (iii) synthetic cannabinoids, (iv) CB1-targeting drugs (antagonist / inverse agonist / antibody as labeled in sources).
+  Fail: one pooled “cannabinoid” recommendation.
+
+Gate R (registry):
+  Data: ClinicalTrials.gov API v2, frozen query in PROTOCOL.md, run once at Unit 01, UTC date recorded.
+  Pass: query string, date, and either zero studies meeting the ADPKD + cannabinoid intervention rule, OR a complete list of hits with NCT IDs (no silent dropping). Borderline hits listed with include/exclude reason.
+  Fail: query not frozen, or hits omitted.
+  A hit counts if the study lists an ADPKD/PKD condition AND a cannabis/cannabinoid intervention (not merely a mention in eligibility prose without intervention).
+  Prediction at freeze: Specify-era search found no ADPKD cannabinoid RCT; Unit 01 must re-run. Empty search is a complete finding (CLAIMS.md).
+
+Gate L (labels):
+  Pass: Jynarque (tolvaptan) and Epidiolex (cannabidiol) labels cited (DailyMed setids below). Write-up states: (a) whether each names the other drug; (b) tolvaptan CYP3A / boxed liver warning as on the label; (c) Epidiolex midazolam and P-gp statements as on the label.
+  Fail: labels not opened, or briefing text substituted for the label.
+
+Gate U (DDI class):
+  Allowed classes for CBD + tolvaptan: documented pair PK; labeled interaction; unstudied (default if neither of the above); analog only (midazolam, everolimus, tacrolimus, grapefruit as bounds, not as the pair).
+  Pass: pair classified unstudied unless a dedicated PK/DDI study of that pair is found and cited, or a labeled contraindication / named interaction exists.
+  Fail: scribe writes contraindicated or safe for the pair without a pair-specific study or a labeled contraindication.
+  Analogs cannot convert U into “contraindicated” or “safe.”
+
+Decide: T+R+L+U pass = complete v1 map. T fail = rewrite, do not seal a pooled-cannabinoid paper. U fail = not confirmatory. R or L fail = incomplete; amend or stop.
+
+================================================================
+DATA DESCRIPTION
+================================================================
+
+ITEM 5. Dataset
+ANSWER:
+Secondary public sources, not a patient-level dataset:
+(1) DailyMed / FDA PI — Jynarque setid 3febc0a1-9e5a-4ce0-843d-210f21d862c4; Epidiolex setid 8bf27097-4870-43fb-94f0-f3d0871d1eec. If DailyMed revises the label, Unit 00 records the new revision date and still extracts the same fact types.
+(2) ClinicalTrials.gov API v2: GET https://clinicaltrials.gov/api/v2/studies with countTotal=true
+      query.cond = "polycystic kidney" OR ADPKD OR PKD1 OR PKD2
+      query.intr = cannabis OR cannabidiol OR cannabinoid OR THC OR dronabinol OR nabiximols OR epidiolex
+(3) KDIGO 2025 ADPKD guideline PDF: https://kdigo.org/wp-content/uploads/2025/01/KDIGO-2025-ADPKD-Guideline.pdf
+      Required excerpts: Practice Point 7.3.4.1; Table 19 cannabis row. Key-takeaways PDF may supplement, not replace, the full guideline.
+(4) Peer-reviewed papers the operator can access without a library proxy crawl; paywalled PDFs the human places in studies/cannabis-safety/data/pdfs/.
+Not confirmatory: ChEMBL IC50 models, docking, OpenFDA ROR, study 1 CNR1 tables, ecs-lab Scout dumps, GEO count matrices.
+
+ITEM 6. Openness of data
+ANSWER:
+Labels, ClinicalTrials.gov, and KDIGO PDFs are public. Third-party copyright remains with FDA/NLM, NIH, and KDIGO. Study text is CC BY 4.0. Do not commit copyrighted full-text PDFs if the license forbids it.
+
+ITEM 7. Access to data
+ANSWER:
+Jynarque: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3febc0a1-9e5a-4ce0-843d-210f21d862c4
+Epidiolex: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8bf27097-4870-43fb-94f0-f3d0871d1eec
+CT.gov API: https://clinicaltrials.gov/api/v2/studies  (docs: https://clinicaltrials.gov/data-api/about-api )
+KDIGO: https://kdigo.org/wp-content/uploads/2025/01/KDIGO-2025-ADPKD-Guideline.pdf
+
+ITEM 8. Date(s) data were accessed
+ANSWER:
+Specify / survey retrieval of DailyMed setids, KDIGO URL, and API parameter strings: 30 August 2026 (landing pages and labeled probe statements as published; see prior-knowledge).
+Confirmatory Gate R API run: not yet (blocked until OSF URL is in studies/cannabis-safety/STATUS.md).
+Confirmatory Gate L extraction: Unit 00/02 after OSF; re-check revision dates even if Specify already opened the labels.
+Registrant (github.com/cauld): accessed public pages on 30 August 2026; confirmatory registry export is Unit 01 after OSF.
+
+ITEM 9. Data collection
+ANSWER:
+Original collection: FDA labeling; NIH ClinicalTrials.gov registrations; KDIGO guideline panel. This study does not enroll patients or assign treatments.
+Links as in Item 7.
+
+ITEM 10. Data codebook
+ANSWER:
+Not a tabular codebook. Extraction fields are locked in PROTOCOL.md:
+Labels: whether each product names the other; Jynarque CYP3A / boxed hepatotoxicity / REMS if present; Epidiolex midazolam / CYP3A4 probe; P-gp substrate examples (e.g. everolimus); hepatotoxicity; renal-impairment language if present.
+Registry: NCT ID, condition, intervention, include/exclude with one-line reason, totalCount, UTC date.
+KDIGO: quoted PP 7.3.4.1 and Table 19 cannabis row from the full PDF.
+
+================================================================
+VARIABLES
+================================================================
+
+ITEM 11. Manipulated variable(s)
+ANSWER:
+Not applicable. No experiment.
+
+ITEM 12. Measured variable(s)
+ANSWER:
+No numeric outcome for inference. Coded facts:
+Exposure class (four-level taxonomy, Gate T).
+Registry hit vs non-hit under frozen query (Gate R).
+Label facts listed in Item 10 (Gate L).
+DDI class for CBD+tolvaptan: documented pair PK / labeled interaction / unstudied / analog only (Gate U).
+KDIGO quoted guidance (counsel; not a disease-modifying therapy; Table 19 “not recommended” as on the guideline).
+
+ITEM 13. Inclusion and exclusion criteria
+ANSWER:
+Include: sources in PROTOCOL confirmatory list; CT.gov studies matching frozen query, then classified by the intervention rule.
+Exclude as confirmatory: FAERS ROR; docking/CYP models; study 1 CNR1; proxy-crawled publisher PDFs; briefing text in place of labels.
+Borderline CT.gov hits: list, do not drop silently.
+Sample size: not a patient sample. Expected CT.gov hits: unknown until Unit 01 (Specify-era search found none; that is not Gate R).
+
+ITEM 14. Missing data
+ANSWER:
+If a label URL 404s or setid is retired: Unit 00 records successor URL/revision; still extract the same fact types; do not substitute briefing. If API fails: amend or stop; do not replace with an unfrozen UI search and call it Gate R. If KDIGO PDF moves: record new official URL; required excerpts remain PP 7.3.4.1 and Table 19.
+
+ITEM 15. Outliers
+ANSWER:
+Not applicable (no numeric sample).
+
+ITEM 16. Sampling weights
+ANSWER:
+None. Registry emptiness is not a proof that no unpublished trial exists.
+
+================================================================
+KNOWLEDGE OF DATA
+================================================================
+
+ITEM 17. Previous work
+ANSWER:
+This repository drafted the protocol using public labels, KDIGO PDFs, and ClinicalTrials.gov documentation. No confirmatory Gate R export exists yet. Study 1 (repo root) is a separate CNR1 atlas registration and must not be mixed into this form’s hypotheses.
+Published context (not this repo’s confirmatory result): KDIGO 2025 already counsels on cannabis; no ADPKD cannabinoid RCT identified at Specify; Hinden 2026 and related ECS biology papers are background, not treatment evidence; Monlunabant DKD RCT (UACR miss) is a CB1-drug class note if cited, not an ADPKD efficacy claim.
+
+ITEM 18. Prior knowledge
+ANSWER:
+Known from Specify/survey (30 August 2026), before this OSF submit, from opening public pages — not from Gate R:
+- DailyMed setids as frozen above.
+- Epidiolex label (that retrieval): coadministration of EPIDIOLEX 750 mg twice daily with midazolam 2.5 mg did not result in changes in plasma concentrations of midazolam.
+- Jynarque label (that retrieval): no cannabis/CBD/Epidiolex string found; neither label named the other product.
+- KDIGO 2025 PP 7.3.4.1 and Table 19 cannabis row exist in the official PDF.
+- Specify-era CT.gov look found no ADPKD cannabinoid RCT; this is NOT Gate R and cannot be reported as the confirmatory empty-search claim until Unit 01.
+Unknown until confirmatory units: Unit 01 totalCount and NCT list; whether a pair PK study appears at run; whether DailyMed has revised the interaction sections.
+
+================================================================
+ANALYSES
+================================================================
+
+ITEM 19. Statistical model
+ANSWER:
+None. PROTOCOL: “CONFIRMATORY — statistics: None. This is a structured evidence map. No p-values. No FAERS ROR.”
+Sequence: Unit 00 source register (URLs, revision dates, no DDI conclusions) -> Unit 01 Gate R API export -> remaining units extract labels (L), taxonomy table (T), and DDI class (U) per PROTOCOL.md / PHASES.md. Do not load GSE185948 or GSE195460.
+
+ITEM 20. Effect size
+ANSWER:
+Not applicable. Empty trial search is an absence finding. Analog PK (e.g. labeled midazolam; labeled everolimus fold-change if present) are bounds, not an effect of CBD on tolvaptan.
+
+ITEM 21. Power
+ANSWER:
+Not applicable.
+
+ITEM 22. Inference criteria
+ANSWER:
+Human-owned gates T, R, L, U in KILL.md (copied under Hypotheses). Claims ceiling in CLAIMS.md. Finding that the CBD–tolvaptan pair is unstudied is a complete paper.
+
+ITEM 23. Assumptions
+ANSWER:
+If DailyMed revises: record revision, extract same fact types. If CT.gov API schema changes: amend PROTOCOL or stop; do not silently change query.cond / query.intr. University proxy must not be used to bulk-download publisher PDFs via the agent.
+
+ITEM 24. Sensitivity
+ANSWER:
+Analog CYP/P-gp substrates (midazolam, everolimus, tacrolimus, grapefruit) may be narrative only. They cannot move Gate U from unstudied to contraindicated or safe. Key-takeaways KDIGO PDF cannot replace the full guideline excerpts.
+
+ITEM 25. Exploratory
+ANSWER:
+FAERS; docking; CYP IC50; study 1 CNR1; any 12-person PK trial design. Label exploratory. Cannot pass T/R/L/U.
+
+================================================================
+CLAIMS CEILING (not an OSF numbered item; paste into notes if a notes box exists)
+================================================================
+If gates pass, we may claim only CLAIMS.md: no matching CT.gov records (or honest hit list); KDIGO cannabis guidance quoted from cited pages; labels do not name each other (or do, if that is what the label says at run); four exposure classes kept separate; CBD–tolvaptan unstudied unless pair PK or labeled interaction is found.
+We will not claim: patients should start or stop cannabis/CBD/THCV; CBD is contraindicated with tolvaptan without pair evidence or a labeled contraindication; plant cannabis causes or slows ADPKD; CNR1 / study 1 gates; CB1 antagonists treat ADPKD; FAERS ROR as confirmatory DDI/AKI; computed CYP IC50 or docking as clinical DDI.
+Framing if the trial search is empty: uncertainty map with a claims ceiling, not a demonstration that cannabis is safe or effective in ADPKD.
+
+================================================================
+STATEMENT OF INTEGRITY
+================================================================
+
+ITEM 26. Integrity statement
+ANSWER:
+The registrant filled this preregistration to the best of their knowledge. No other OSF preregistration exists for the same hypotheses and this evidence map. Study 1 (CNR1 atlas kill) is a different question and a different registration. Gate R has not been run. Specify-era DailyMed/KDIGO reading is disclosed under prior knowledge and does not replace Unit 00/02 label extraction or Unit 01 registry export.
