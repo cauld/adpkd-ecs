@@ -1,7 +1,7 @@
 ---
 id: 02
 role: Operator
-status: blocked-until-osf
+status: ready
 reads:
   - PROTOCOL.md
   - KILL.md

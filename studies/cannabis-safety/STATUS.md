@@ -5,10 +5,10 @@
 **Protocol seal:** GIT-SEALED 2026-08-30 — OSF recorded  
 **Confirmatory git SHA:** `db44b3086ae8c4d640dc40f44945bcef27ffe6bc`  
 **OSF URL:** https://osf.io/t6rzu/ ([overview](https://osf.io/t6rzu/overview))  
-**Current stage:** Unit 00 eligible (source register). Gate R is Unit 01, not a Specify-era ping.  
+**Current stage:** Units 00–04 operator-complete. Gate R pass (human). Gates L, T, U and Decide await **human** marks.  
 **Decision:** none yet  
-**Must not:** load study 1 GEO counts; write *CNR1* claims  
-**Superpowers:** Framing approved. Survey and plan frozen with protocol. Study 2 OSF URL recorded 2026-08-30.
+**Must not:** load study 1 GEO counts; write *CNR1* claims; rewrite unstudied DDI as safe or contraindicated  
+**Superpowers:** Framing approved. Survey and plan frozen with protocol. OSF recorded. Units 00–04 ran 2026-08-30. Gate R human pass 2026-08-30.
 
 ## Ledger
 
@@ -18,6 +18,10 @@
 | 2026-08-30 | Human approved framing. Survey + plan. Clarify 1–5. Analyze. No GEO. |
 | 2026-08-30 | Human **Seal**. Git freeze SHA `db44b3086ae8c4d640dc40f44945bcef27ffe6bc`. OSF still open. |
 | 2026-08-30 | Human recorded study 2 OSF URL https://osf.io/t6rzu/ . Unit 00 unblocked. |
+| 2026-08-30 | Unit 00 source register written (`research/00-sources.md`). No DDI conclusions. Gate R not run. |
+| 2026-08-30 | Unit 01 CT.gov export (`research/01-ctgov.md`). Frozen query, 2026-08-30T16:30:50Z, `totalCount` 0. |
+| 2026-08-30 | Human marked Gate R **pass** (chat: update accordingly). Empty frozen query + complete NCT list (none). |
+| 2026-08-30 | Units 02–04 written (`02-labels.md`, `03-taxonomy.md`, `04-ddi.md`). Pair class **unstudied**. L/T/U/Decide not human-marked. |
 
 ## Blockers before confirmatory execution
 
@@ -41,5 +45,13 @@ Recorded: https://osf.io/t6rzu/ ([overview](https://osf.io/t6rzu/overview)). OSF
 ## Human remaining
 
 - [x] OSF submit + URL in this file
-- [ ] Unit 00 source register (no DDI conclusions)
+- [x] Unit 00 source register (no DDI conclusions)
+- [x] Unit 01 ClinicalTrials.gov export (operator; `totalCount` 0)
+- [x] Human marks Gate R (pass, chat 2026-08-30)
+- [x] Unit 02 label extraction (operator; Gate L human)
+- [x] Unit 03 taxonomy + KDIGO (operator; Gate T human)
+- [x] Unit 04 DDI class **unstudied** (operator; Gate U / Decide human)
+- [ ] Human marks Gate L
+- [ ] Human marks Gate T
+- [ ] Human marks Gate U and Decide
 - [ ] Drop paywalled PDFs only if needed and allowed

@@ -22,8 +22,9 @@ Not confirmatory. Check off in git when done.
 
 ## After study 1 OSF
 
-- [ ] Unit 00 inventory (`research/data-inventory.md`) — both GEO accessions
-- [ ] Units 01–06; human marks C/A/B/S; Decide
+- [x] Unit 00 inventory (`research/data-inventory.md`) — both GEO accessions
+- [x] Unit 01 freeze (`research/01-frozen-labels.md`)
+- [ ] Units 02–06; human marks C/A/B/S; Decide
 
 ## Not until study 1 Decide
 

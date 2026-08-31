@@ -1,7 +1,7 @@
 ---
 id: 01
 role: Operator
-status: blocked-until-osf
+status: done
 reads:
   - PROTOCOL.md
   - research/data-inventory.md
@@ -29,4 +29,8 @@ must_not:
 
 ## Notes (after run)
 
-- Not run.
+- Ran 2026-08-30. Output: `research/01-frozen-labels.md`.
+- GSE185948: author `PT1`/`PT2`; injured = PT ∩ (VCAM1/HAVCR1/PROM1 count > 0). Other epi: TAL/DCT/CNT_PC/ICA/ICB. No clustering. No *CNR1*.
+- GSE195460: marker fallback (PROTOCOL z-score rule). No author table. No *CNR1*.
+- RDS is `dgCMatrix` 27970 × 102710; laptop peak ~2.5 GiB. Spark not used.
+- Pass. Freeze recorded in `research/01-frozen-labels.md`.

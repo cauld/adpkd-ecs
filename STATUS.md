@@ -6,7 +6,7 @@
 **Protocol seal:** GIT-SEALED 2026-08-30 — OSF recorded  
 **Confirmatory git SHA:** `db44b3086ae8c4d640dc40f44945bcef27ffe6bc`  
 **OSF URL:** https://osf.io/7g3tn/ ([overview](https://osf.io/7g3tn/overview))  
-**Current stage:** Unit 00 eligible (inventory). Do not plot *CNR1* vs cell type or disease.  
+**Current stage:** Unit 01 freeze in git (`research/01-frozen-labels.md`). Next: Unit 02 Gate C.  
 **Decision:** none yet  
 **Superpowers:** Framing approved. Survey and plan frozen with protocol. Study 1 OSF URL recorded 2026-08-30.  
 **Sibling:** [`studies/cannabis-safety/`](studies/cannabis-safety/)
@@ -22,11 +22,13 @@
 | 2026-08-30 | Human approved framings. Prior-work survey + analysis plan. Clarify 1–5. Analyze. **No count matrices loaded.** |
 | 2026-08-30 | Human **Seal**. Git freeze SHA `db44b3086ae8c4d640dc40f44945bcef27ffe6bc`. OSF still open. |
 | 2026-08-30 | Human recorded study 1 OSF URL https://osf.io/7g3tn/ . Unit 00 unblocked. |
+| 2026-08-30 | Unit 00 inventory. A1 lock (8 vs 5). S eligible (6 vs 5 libraries). No *CNR1* plots. |
+| 2026-08-30 | Unit 01 freeze both atlases (`research/01-frozen-labels.md`). No *CNR1* DE. Laptop RAM sufficient; Spark not used. |
 
 ## Confirmatory vs exploratory
 
 Git-sealed: do **not** edit CONFIRMATORY fields in `PROTOCOL.md` / `KILL.md` / `CLAIMS.md` except by dated amendment.  
-OSF URL is recorded. Unit 00 may run (inventory, no *CNR1* plots). Do not plot *CNR1* vs cell type or disease until Unit 01 freeze is committed. Units 02–06 wait on that freeze. Study 2 OSF is separate: https://osf.io/t6rzu/ .
+OSF URL is recorded. Unit 00–01 complete. Unit 01 freeze is in git. Unit 02 may run Gate C. Study 2 OSF is separate: https://osf.io/t6rzu/ .
 
 ## Blockers before confirmatory execution
 
@@ -55,6 +57,8 @@ Recorded: https://osf.io/7g3tn/ ([overview](https://osf.io/7g3tn/overview)). OSF
 ## Human remaining
 
 - [x] OSF submit + URL in this file
-- [ ] Unit 00 inventory (both GEO); still no *CNR1* plots
+- [x] Unit 00 inventory (both GEO); still no *CNR1* plots
+- [x] Unit 01 freeze PT labels both atlases
+- [ ] Unit 02 Gate C
 - [ ] Do not start docking / study 3 until study 1 Decide
 - [x] Study 2 OSF (separate registration): https://osf.io/t6rzu/

@@ -1,0 +1,16 @@
+{
+  "api_base": "https://clinicaltrials.gov/api/v2/studies",
+  "http_status": [
+    200
+  ],
+  "n_studies_downloaded": 0,
+  "page_count": 1,
+  "query.cond": "\"polycystic kidney\" OR ADPKD OR PKD1 OR PKD2",
+  "query.intr": "cannabis OR cannabidiol OR cannabinoid OR THC OR dronabinol OR nabiximols OR epidiolex",
+  "request_urls": [
+    "https://clinicaltrials.gov/api/v2/studies?format=json&countTotal=true&pageSize=1000&query.cond=%22polycystic+kidney%22+OR+ADPKD+OR+PKD1+OR+PKD2&query.intr=cannabis+OR+cannabidiol+OR+cannabinoid+OR+THC+OR+dronabinol+OR+nabiximols+OR+epidiolex"
+  ],
+  "retrieved_utc": "2026-08-30T16:30:50Z",
+  "studies": [],
+  "totalCount": 0
+}

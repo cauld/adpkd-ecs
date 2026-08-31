@@ -19,8 +19,8 @@ Generic loop: [`.seal/E2E_FLOW.md`](.seal/E2E_FLOW.md). Study instantiation: [`E
 
 Units in `units/` (Operator). Order is dependency order.
 
-0. Inventory (both GEO landing pages, metadata columns, sample n) — **after Seal**, no *CNR1* plots  
-1. Freeze PT / failed-repair labels on **both** atlases  
+0. Inventory (both GEO landing pages, metadata columns, sample n) — **done 2026-08-30**, no *CNR1* plots  
+1. Freeze PT / failed-repair labels on **both** atlases — **done 2026-08-30** (in git)  
 2. Gate C detection (ADPKD)  
 3. Gate A (*CNR1*)  
 4. Gate B diagnostics  

@@ -2,7 +2,7 @@
 
 **Study:** ADPKD-ECS study 1 — *CNR1* localization in GSE185948 and specificity vs DKD in GSE195460.  
 **Program:** cannabis / ECS × ADPKD. Study 2 (safety map) is a **separate** seal.  
-**Stage:** Protocol **GIT-SEALED** 2026-08-30 (`db44b30`). OSF: https://osf.io/7g3tn/ . No *CNR1*-vs-cell-type analysis has been run.  
+**Stage:** Protocol **GIT-SEALED** 2026-08-30 (`db44b30`). OSF: https://osf.io/7g3tn/ . Unit 01 freeze written. No *CNR1*-vs-cell-type analysis has been run.  
 **Audience:** Independent reviewer (stats / computational nephrology / pharmacology).  
 **Ask:** Can this protocol be frozen as a secondary-data preregistration, or must it change first?
 

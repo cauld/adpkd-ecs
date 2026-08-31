@@ -21,7 +21,7 @@ This git tree is the **program**. Each confirmatory question is its own seal.
 | [`docs/SUPERPOWERS.md`](docs/SUPERPOWERS.md) | How Science Superpowers maps onto SEAL |
 | [`EXPLORE.md`](EXPLORE.md) | Parked work including study 3 |
 
-**Protocol seal (study 1):** GIT-SEALED 2026-08-30 (`db44b30`). OSF: https://osf.io/7g3tn/ . Unit 00 may inventory GEO files. Do not plot *CNR1* vs cell type or disease until the Unit 01 freeze is committed.
+**Protocol seal (study 1):** GIT-SEALED 2026-08-30 (`db44b30`). OSF: https://osf.io/7g3tn/ . Unit 01 freeze is in `research/01-frozen-labels.md`. Next: Unit 02 Gate C.
 
 Study text is [CC BY 4.0](LICENSE). Third-party datasets stay under their original licenses.
 

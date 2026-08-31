@@ -1,7 +1,7 @@
 ---
 id: 00
 role: Operator
-status: ready
+status: done
 reads:
   - PROTOCOL.md
 must_not:
@@ -35,4 +35,8 @@ must_not:
 
 ## Notes (after run)
 
-- Not run. OSF recorded 2026-08-30 (https://osf.io/7g3tn/). Inventory may proceed; still no *CNR1* plots.
+- Ran 2026-08-30. Output: `research/data-inventory.md`. Runner: `pipeline/inventory_00.py`.
+- Pass: ADPKD metadata + RDS reachable; DKD 11 RNA h5s reachable. `CNR1` + 4/4 PT-identity genes in both feature scans. No *CNR1* plots.
+- Gate A contrast lock: **A1** (8 PKD + 5 control patients). Gate S sample n: eligible (6 control + 5 DN libraries).
+- GSE185948 `celltype` tokens include `PT1`/`PT2`; no `FR-PTC`. GSE195460: no author cell-type table on GEO.
+- RDS is **double-gzipped**. Unit 01 must peel both layers. Counts not loaded. 24 GiB RAM — do not enter feasibility unasked.

@@ -7,7 +7,7 @@ Chat shorthand: **Explore → Question → Kill → Protocol → Clarify → Ana
 
 Science Superpowers maps onto those stages: [`docs/SUPERPOWERS.md`](docs/SUPERPOWERS.md).
 
-**You are here:** see `STATUS.md`. Protocol **GIT-SEALED**. OSF: https://osf.io/7g3tn/ . Unit 00 eligible; no *CNR1*-vs-cell-type plots until Unit 01 freeze.
+**You are here:** see `STATUS.md`. Protocol **GIT-SEALED**. OSF: https://osf.io/7g3tn/ . Unit 01 freeze in git. Next: Unit 02 Gate C.
 
 ---
 

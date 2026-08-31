@@ -2,12 +2,12 @@
 
 A **unit** is BMAD’s story file without Agile: everything the Operator needs in one place. One unit, one run, one note.
 
-Kill protocol is **git-sealed**. OSF: https://osf.io/7g3tn/ . Unit 00 may run (inventory without *CNR1* plots). Units 01–06 follow Unit 00.
+Kill protocol is **git-sealed**. OSF: https://osf.io/7g3tn/ . Units 00–01 done. Unit 02 Gate C is next.
 
 | ID | Title | Gate | Depends on |
 |---|---|---|---|
-| 00 | Data access inventory (both GEO) | — | After OSF |
-| 01 | Freeze PT / failed-repair labels (both atlases) | — | 00 |
+| 00 | Data access inventory (both GEO) | — | **done** 2026-08-30 |
+| 01 | Freeze PT / failed-repair labels (both atlases) | — | **done** 2026-08-30 |
 | 02 | *CNR1* detection (ADPKD) | C | 01 |
 | 03 | Gate A contrast | A | 02 |
 | 04 | Gate B diagnostics | B | 03 (A pass to interpret) |
