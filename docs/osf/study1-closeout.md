@@ -3,7 +3,7 @@
 **Registration (already exists).** https://osf.io/7g3tn/  
 **Do not** re-register. **Do not** edit the frozen ITEM 1–26 answers. Same pattern as study 2’s 2026-08-31 comment.
 
-Canonical protocol freeze remains git SHA `db44b3086ae8c4d640dc40f44945bcef27ffe6bc`.
+**Results git SHA.** `857d872c3b986dcc65f2aafae386680c2d651e62` (Decide + numbers + this packet). Protocol freeze remains `db44b30`.
 
 ## 1. Comment (required)
 

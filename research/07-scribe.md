@@ -2,7 +2,7 @@
 
 **Decide.** 2026-09-01. Gate **C fail**. Stop this ADPKD accession; do not dock.  
 **Scribe ceiling.** [`CLAIMS.md`](../CLAIMS.md) and [`DECIDE.md`](../DECIDE.md). This is not study 2.  
-**Lock.** Git Seal `db44b3086ae8c4d640dc40f44945bcef27ffe6bc` · OSF https://osf.io/7g3tn/  
+**Lock.** Git Seal `db44b3086ae8c4d640dc40f44945bcef27ffe6bc` · Results `857d872c3b986dcc65f2aafae386680c2d651e62` · OSF https://osf.io/7g3tn/  
 **Re-run (this report).** 2026-09-03 13:19 UTC · `Rscript pipeline/gate_c_02.R` · R 4.6.1 · Matrix 1.7.5 · same 51 / 23172.
 
 ## Question

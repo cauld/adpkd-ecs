@@ -9,7 +9,7 @@ Human marked Gate C fail. In the frozen GSE185948 PT object (author PT1+PT2, n=2
 
 This is a detectability stop, not a claim that CNR1 is absent from kidney, not a test of ADPKD vs control, and not a refutation of Hinden et al. 2026. Claim 1 (detectability) is not made. Study 2 (https://osf.io/t6rzu/) is a separate registration.
 
-Scribe: git research/07-scribe.md. Numbers: research/02-detection.md. Canonical protocol freeze remains git SHA db44b3086ae8c4d640dc40f44945bcef27ffe6bc. Results commit: RESULTS_SHA_PLACEHOLDER.
+Scribe: git research/07-scribe.md. Numbers: research/02-detection.md. Canonical protocol freeze remains git SHA db44b3086ae8c4d640dc40f44945bcef27ffe6bc. Results commit: 857d872c3b986dcc65f2aafae386680c2d651e62.
 
 Plugin prereg.sh audit fails INTEGRITY against first commit 95780fa; this study’s lock is the Seal SHA above plus this OSF registration.
 ----------------------------------------------------------------
