@@ -81,4 +81,4 @@ See `KILL.md`. Human marks gates.
 
 ## Amendments
 
-None after Seal.
+2026-08-31 — `CLAIMS.md` ceiling only (not PROTOCOL CONFIRMATORY queries): (3) quote Jynarque as metabolized almost exclusively by CYP3A, not “sensitive CYP3A substrate”; (5) unstudied unless pair PK or labeled interaction at Units 01–04.

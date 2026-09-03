@@ -34,7 +34,9 @@ cannabis OR cannabidiol OR cannabinoid OR THC OR dronabinol OR nabiximols OR epi
 https://clinicaltrials.gov/api/v2/studies?format=json&countTotal=true&pageSize=1000&query.cond=%22polycystic+kidney%22+OR+ADPKD+OR+PKD1+OR+PKD2&query.intr=cannabis+OR+cannabidiol+OR+cannabinoid+OR+THC+OR+dronabinol+OR+nabiximols+OR+epidiolex
 ```
 
-Matches Unit 00 copy and `PROTOCOL.md`.
+Query **strings** match Unit 00 and `PROTOCOL.md`. The fetched URL uses `+` and adds `format=json&pageSize=1000`; Unit 00’s constructed URL used `%20` and omitted those extra parameters. Equivalent `application/x-www-form-urlencoded` for the frozen `query.cond` / `query.intr`; not byte-identical URLs.
+
+`query.intr` is the frozen token list. It does not include marijuana, nabilone, Cesamet, Marinol, Sativex, hemp, or THCV. Classifier synonyms in `ctgov_include.py` never run if the API returns zero rows. ICTRP / EU CTR / jRCT were not searched. The finding is **this query** returned 0, not “no ADPKD cannabinoid trial exists in any registry.”
 
 ---
 

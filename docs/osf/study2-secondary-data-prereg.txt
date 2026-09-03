@@ -255,6 +255,8 @@ If gates pass, we may claim only CLAIMS.md: no matching CT.gov records (or hones
 We will not claim: patients should start or stop cannabis/CBD/THCV; CBD is contraindicated with tolvaptan without pair evidence or a labeled contraindication; plant cannabis causes or slows ADPKD; CNR1 / study 1 gates; CB1 antagonists treat ADPKD; FAERS ROR as confirmatory DDI/AKI; computed CYP IC50 or docking as clinical DDI.
 Framing if the trial search is empty: uncertainty map with a claims ceiling, not a demonstration that cannabis is safe or effective in ADPKD.
 
+2026-08-31 ceiling (git CLAIMS.md; OSF comment, not a form rewrite): (3) metabolized almost exclusively by CYP3A — not “sensitive CYP3A substrate”; (5) pair class is Units 01–04, not Unit 00.
+
 ================================================================
 STATEMENT OF INTEGRITY
 ================================================================
@@ -262,3 +264,15 @@ STATEMENT OF INTEGRITY
 ITEM 26. Integrity statement
 ANSWER:
 The registrant filled this preregistration to the best of their knowledge. No other OSF preregistration exists for the same hypotheses and this evidence map. Study 1 (CNR1 atlas kill) is a different question and a different registration. Gate R has not been run. Specify-era DailyMed/KDIGO reading is disclosed under prior knowledge and does not replace Unit 00/02 label extraction or Unit 01 registry export.
+
+================================================================
+ADDENDUM — OSF COMMENT 2026-08-31 (not a re-registration)
+================================================================
+Do not edit frozen ITEM answers. Post as a comment on https://osf.io/t6rzu/
+Full paste: study2-osf-comment-2026-08-31-claims-amendment.txt
+
+CLAIMS ceiling tightening only. CONFIRMATORY query/rules unchanged.
+Scribe follows git studies/cannabis-safety/CLAIMS.md:
+(3) quote Jynarque as metabolized almost exclusively by CYP3A; do not write “sensitive CYP3A substrate” as a Jynarque label quote (absent from the SPL).
+(5) pair class is Units 01–04, not Unit 00.
+Canonical freeze remains git SHA db44b3086ae8c4d640dc40f44945bcef27ffe6bc.

@@ -24,3 +24,4 @@ must_not:
 ## Notes (after run)
 
 - Ran 2026-08-30. SPL v19 / v35. Neither product names the other. Quotes in `research/02-labels.md`.
+- Human Gate L **pass** 2026-08-31.

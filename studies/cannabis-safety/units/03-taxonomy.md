@@ -24,3 +24,4 @@ must_not:
 ## Notes (after run)
 
 - Ran 2026-08-30. Four sections + KDIGO quotes in `research/03-taxonomy.md`.
+- Human Gate T **pass** 2026-08-31 (four headings, not a full CB1/OTC census).

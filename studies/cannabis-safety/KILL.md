@@ -42,6 +42,16 @@
 | U fail | Not confirmatory; overclaim |
 | R or L fail | Incomplete protocol; amend or stop |
 
+## Human marks (2026-08-31)
+
+| Gate | Mark | Scope |
+|---|---|---|
+| R | **Pass** (2026-08-30) | Frozen query + `totalCount` 0; NCT list complete (none) |
+| L | **Pass** | `research/02-labels.md` citations + (a)(b)(c) |
+| T | **Pass** | Four headings kept separate; not a full CB1/OTC census |
+| U | **Pass** | Pair **unstudied**; analogs not converted to safe/contraindicated |
+| Decide | **Complete v1 map** | [`DECIDE.md`](DECIDE.md). Scribe ≤ `CLAIMS.md`. |
+
 ## Explicitly not in the kill
 
 GEO *CNR1*. Docking. CYP neural nets. FAERS disproportionality. A 12-person PK trial. Study 1 Gate A/S.

@@ -24,4 +24,5 @@ must_not:
 
 ## Notes (after run)
 
-- Ran 2026-08-30. Operator class: **unstudied**. Analogs listed, not converted. Human Decide open.
+- Ran 2026-08-30. Operator class: **unstudied**. Analogs listed, not converted.
+- Human Gate U **pass** and Decide **complete v1 map** 2026-08-31. See [`DECIDE.md`](../DECIDE.md).

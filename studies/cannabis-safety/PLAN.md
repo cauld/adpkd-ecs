@@ -1,8 +1,8 @@
 # ADPKD cannabis/ECS safety map (external review)
 
 **Study:** ADPKD-ECS study 2 — evidence map, not GEO.  
-**Stage:** Protocol **GIT-SEALED** 2026-08-30 (`db44b30`). OSF: https://osf.io/t6rzu/ .  
-**Ask:** Can this be frozen as a preregistered evidence map, or must sources/queries change first?
+**Stage:** Protocol **GIT-SEALED** 2026-08-30 (`db44b30`). OSF: https://osf.io/t6rzu/ . **Decide 2026-08-31:** complete v1 map (T+R+L+U pass).  
+**Ask (archive):** Frozen as a preregistered evidence map; gates marked. Do not expand confirmatory queries after Decide.
 
 **Source of truth:** `PROTOCOL.md` and `KILL.md`.
 

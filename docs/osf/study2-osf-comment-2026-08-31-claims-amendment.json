@@ -1,0 +1,16 @@
+{
+  "data": {
+    "type": "comments",
+    "attributes": {
+      "content": "CLAIMS ceiling amendment (2026-08-31) — not a re-registration. CONFIRMATORY ClinicalTrials.gov query strings and Gate R/L/T/U rules are unchanged.\n\nScribe follows git studies/cannabis-safety/CLAIMS.md, not the original OSF paste:\n\n(3) Quote Jynarque as metabolized almost exclusively by CYP3A. Do not write “sensitive CYP3A substrate” as a Jynarque label quote (that phrase is not on the DailyMed SPL). Hepatotoxicity boxed warning and REMS remain as on the label.\n\n(5) CBD–tolvaptan is classified unstudied unless a dedicated pair PK/DDI study or a labeled named interaction is found at Units 01–04. Unit 00 is a source register only and does not classify the pair.\n\nCanonical freeze remains git SHA db44b3086ae8c4d640dc40f44945bcef27ffe6bc."
+    },
+    "relationships": {
+      "target": {
+        "data": {
+          "type": "nodes",
+          "id": "t6rzu"
+        }
+      }
+    }
+  }
+}

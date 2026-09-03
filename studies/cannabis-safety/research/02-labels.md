@@ -35,6 +35,8 @@ Case-insensitive search of each full SPL XML:
 
 **Metabolism (12.3).** “Tolvaptan is metabolized almost exclusively by CYP3A.”
 
+**Transporter (12.3; not a PROTOCOL required extract).** “Tolvaptan is a substrate of P-gp and an inhibitor of P-gp and BCRP.” Recorded so Unit 04 does not invent this sentence. It is not a named Epidiolex interaction.
+
 The exact phrase “sensitive CYP3A substrate” does **not** appear in this SPL (search `sensitive CYP3A`: 0 hits). Do not put that phrase in the scribe’s mouth as a **label quote**.
 
 **Strong / moderate inhibitors (5.4).** “Concomitant use of JYNARQUE with drugs that are moderate or strong CYP3A inhibitors (e.g., ketoconazole, itraconazole, lopinavir/ritonavir, indinavir/ritonavir, ritonavir, and conivaptan) increases tolvaptan exposure. Use with strong CYP3A inhibitors is contraindicated; dose reduction of JYNARQUE is recommended for patients while taking moderate CYP3A inhibitors.”
@@ -77,4 +79,4 @@ Section **7.2** lists CYP1A2, CYP2B6, CYP2C8, CYP2C19, UGT1A9, and orally admini
 | Labels opened (DailyMed setids) | Yes |
 | Briefing not used as the label | Yes |
 
-**Human marks Gate L.** Operator does not mark it.
+**Human Gate L: pass** (2026-08-31).

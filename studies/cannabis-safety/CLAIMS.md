@@ -8,9 +8,9 @@ This file is **study 2 only**. Study 1 atlas claims live in repo-root [`CLAIMS.m
 
 1. No ClinicalTrials.gov record matching the frozen search treated cannabis, CBD, THC, or a named cannabinoid as an intervention in ADPKD/PKD (or the search is reported with hits listed if any appear at run time).
 2. KDIGO 2025 ADPKD guidance on cannabis (counsel / not a disease-modifying therapy) is quoted from the cited guideline pages, not from study 1.
-3. Jynarque and Epidiolex **labels** (DailyMed or equivalent FDA label) do not name each other as a listed interaction; tolvaptan is a sensitive CYP3A substrate with a hepatotoxicity boxed warning; Epidiolex’s labeled midazolam (CYP3A4 probe) result and P-gp substrate warnings are stated as on the label.
+3. Jynarque and Epidiolex **labels** (DailyMed or equivalent FDA label) do not name each other as a listed interaction; tolvaptan is **metabolized almost exclusively by CYP3A** as on the Jynarque label, with a hepatotoxicity boxed warning and REMS; Epidiolex’s labeled midazolam (CYP3A4 probe) result and P-gp substrate warnings are stated as on the label. Do not write “sensitive CYP3A substrate” as a Jynarque label quote (that phrase is not on the SPL).
 4. Plant cannabis, OTC CBD, prescription CBD, synthetic cannabinoids, and CB1 antagonist/inverse-agonist **drugs** are reported as **separate** exposures.
-5. CBD–tolvaptan co-administration is classified as **unstudied in a dedicated PK trial** unless Unit 00 finds a named PK or DDI study of that pair.
+5. CBD–tolvaptan co-administration is classified as **unstudied in a dedicated PK trial** unless a dedicated pair PK/DDI study or a labeled named interaction is found at run (Units 01–04). Unit 00 is a source register only and does not classify the pair.
 
 ## We will not claim
 

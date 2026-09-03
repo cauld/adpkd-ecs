@@ -46,7 +46,7 @@
 
 - [x] **Step 1:** Extract Jynarque CYP3A / boxed liver / whether cannabis or Epidiolex is named.
 - [x] **Step 2:** Extract Epidiolex midazolam sentence, P-gp examples, hepatotoxicity, whether Jynarque/tolvaptan is named.
-- [ ] **Step 3:** Human marks Gate L. Quote labels; do not quote the briefing as a label.
+- [x] **Step 3:** Human marks Gate L (pass, 2026-08-31). Quote labels; do not quote the briefing as a label.
 
 ### Task 4: Taxonomy + KDIGO (Unit 03, Gate T)
 
@@ -54,7 +54,7 @@
 
 - [x] **Step 1:** Four sections: plant cannabis; CBD (Rx vs OTC if sources distinguish); synthetic cannabinoids; CB1-targeting drugs.
 - [x] **Step 2:** Quote PP 7.3.4.1 and Table 19 cannabis row.
-- [ ] **Step 3:** Human marks Gate T.
+- [x] **Step 3:** Human marks Gate T (pass, scoped, 2026-08-31).
 
 ### Task 5: DDI class + converge (Unit 04, Gate U)
 
@@ -62,7 +62,7 @@
 
 - [x] **Step 1:** Classify CBD + tolvaptan as documented pair / labeled / unstudied / analog only per PROTOCOL.
 - [x] **Step 2:** Analogs (midazolam, everolimus, tacrolimus, grapefruit) stay analog only.
-- [ ] **Step 3:** Human marks U and Decide. Scribe ≤ study 2 `CLAIMS.md`.
+- [x] **Step 3:** Human marks U (pass) and Decide (complete v1, 2026-08-31). Scribe ≤ study 2 `CLAIMS.md`.
 
 ### Simulated-data analog
 

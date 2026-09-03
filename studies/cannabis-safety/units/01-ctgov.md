@@ -37,4 +37,4 @@ must_not:
 - Ran 2026-08-30T16:30:50Z. Artifact: [`research/01-ctgov.md`](../research/01-ctgov.md) + [`research/01-ctgov-export.json`](../research/01-ctgov-export.json).
 - Fixture PASS (tolvaptan exclude; cannabidiol include; eligibility-only exclude).
 - API HTTP 200, `totalCount` 0, NCT list empty. Verification re-GET 16:31:14Z also 0.
-- Human has not marked Gate R.
+- Human marked Gate R **pass** (chat 2026-08-30).

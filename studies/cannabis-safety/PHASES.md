@@ -19,6 +19,6 @@
 | 03 | Taxonomy table + KDIGO excerpt |
 | 04 | DDI class (Gate U) + Converge |
 
-## After Decide
+## After Decide (2026-08-31)
 
-Scribe ≤ `CLAIMS.md`.
+Scribe ≤ `CLAIMS.md`: [`REPORT.md`](REPORT.md) (2026-09-03). Recorded in [`DECIDE.md`](DECIDE.md). Leftovers in [`EXPLORE.md`](EXPLORE.md).

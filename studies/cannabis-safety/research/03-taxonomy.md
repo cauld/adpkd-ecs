@@ -12,13 +12,13 @@ KDIGO page locators: PP 7.3.4.1 on PDF pp. **46** (summary list, journal S45) an
 
 ### (i) Plant *Cannabis sativa* (smoked / vaped / edible as reported)
 
-KDIGO discusses “cannabis products” and Table 19 row **Cannabis**, not smoked vs edible vs vaped as separate rows. Unit 01: no CT.gov study with a cannabis/cannabinoid **intervention** and an ADPKD/PKD **condition**. This map keeps plant cannabis as its own class. It does not claim plant cannabis causes or slows ADPKD (`CLAIMS.md`).
+KDIGO discusses “cannabis products” and Table 19 row **Cannabis**, not smoked vs edible vs vaped as separate rows. Unit 01: the **frozen** CT.gov query returned `totalCount` 0 (not a census of all registries or of marijuana/nabilone synonyms omitted from `query.intr`). This map keeps plant cannabis as its own class. It does not claim plant cannabis causes or slows ADPKD (`CLAIMS.md`). Published human evidence beyond KDIGO was **not** systematically searched.
 
 ### (ii) CBD (prescription Epidiolex vs non-prescription when sources distinguish)
 
 **Prescription.** Epidiolex (cannabidiol) oral solution — DailyMed setid `8bf27097-4870-43fb-94f0-f3d0871d1eec` — indicated for seizures (LGS, Dravet, TSC), **not** ADPKD. Label facts: Unit 02.
 
-**Non-prescription CBD.** KDIGO does not split OTC CBD from plant cannabis in Table 19 (single **Cannabis** row). This class stays separate from (i) and from (iv). No ADPKD CBD RCT in the Unit 01 export.
+**Non-prescription CBD.** KDIGO does not split OTC CBD from plant cannabis in Table 19 (single **Cannabis** row). This class stays separate from (i) and from (iv). No ADPKD CBD RCT **in the Unit 01 frozen export**. OTC CBD products were not a separate literature search.
 
 ### (iii) Synthetic cannabinoid receptor agonists (e.g. Spice/K2 / named SCB case series)
 
@@ -26,7 +26,7 @@ KDIGO PP 7.3.4.1 names **synthetic versions** in the AKI-contamination counsel (
 
 ### (iv) CB1-targeting drugs (antagonist / inverse agonist / antibody as labeled in sources)
 
-PROTOCOL names rimonabant, monlunabant/INV-202, JD5037, AM6545, anti-CB1 mAbs as they appear in trials/labels. They are **not** Jynarque (tolvaptan is a V2 antagonist). They are **not** Epidiolex. Unit 01’s frozen query was cannabis/cannabinoid **interventions**, not a dedicated CB1-antagonist registry search; emptiness of that query is not an efficacy finding for this class. **Do not** write that CB1 antagonists treat ADPKD.
+PROTOCOL names rimonabant, monlunabant/INV-202, JD5037, AM6545, anti-CB1 mAbs as they appear in trials/labels. They are **not** Jynarque (tolvaptan is a V2 antagonist). They are **not** Epidiolex. Unit 01’s frozen query was cannabis/cannabinoid **interventions**, not a dedicated CB1-antagonist registry or literature search; that emptiness is not an efficacy finding and is **not** a completed CB1-drug evidence map. Those agents were not systematically searched. **Do not** write that CB1 antagonists treat ADPKD. Gate T here is four **headings** kept separate, not a claim that each class was fully surveyed.
 
 ---
 
@@ -55,4 +55,4 @@ Key-takeaways PDF was not used (PROTOCOL: may supplement, not replace).
 | ≥ four rows/sections: plant cannabis; CBD (Rx vs OTC if sources allow); synthetics; CB1 drugs | Yes |
 | Not one pooled cannabinoid recommendation | Yes |
 
-**Human marks Gate T.**
+**Human Gate T: pass** (2026-08-31). Four headings kept separate; not a full CB1/OTC census.
