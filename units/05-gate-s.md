@@ -1,7 +1,7 @@
 ---
 id: 05
 role: Operator
-status: blocked-until-osf
+status: skipped-c-fail
 reads:
   - PROTOCOL.md
   - KILL.md
@@ -23,4 +23,4 @@ must_not:
 
 ## Notes (after run)
 
-- Not run.
+- Not run. Gate C fail 2026-09-01. Do not run S as a rescue or as a standalone specificity claim.

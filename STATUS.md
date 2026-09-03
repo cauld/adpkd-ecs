@@ -6,10 +6,10 @@
 **Protocol seal:** GIT-SEALED 2026-08-30 — OSF recorded  
 **Confirmatory git SHA:** `db44b3086ae8c4d640dc40f44945bcef27ffe6bc`  
 **OSF URL:** https://osf.io/7g3tn/ ([overview](https://osf.io/7g3tn/overview))  
-**Current stage:** Unit 01 freeze in git (`research/01-frozen-labels.md`). Next: Unit 02 Gate C.  
-**Decision:** none yet  
-**Superpowers:** Framing approved. Survey and plan frozen with protocol. Study 1 OSF URL recorded 2026-08-30.  
-**Sibling:** [`studies/cannabis-safety/`](studies/cannabis-safety/)
+**Current stage:** After Decide. Gate C **fail**. Stop this ADPKD accession; do not dock. Scribe ≤ [`CLAIMS.md`](CLAIMS.md) and [`DECIDE.md`](DECIDE.md).  
+**Decision:** C fail — stop this ADPKD accession; do not dock (2026-09-01)  
+**Superpowers:** Framing approved. Survey and plan frozen with protocol. Study 1 OSF URL recorded 2026-08-30. Units 00–02 ran. C fail + Decide 2026-09-01. Scribe report 2026-09-03. OSF results packet ready (human posts).  
+**Sibling:** [`studies/cannabis-safety/`](studies/cannabis-safety/) — v1 map complete (Decide 2026-08-31); do not import its claims here
 
 ## Ledger
 
@@ -24,11 +24,14 @@
 | 2026-08-30 | Human recorded study 1 OSF URL https://osf.io/7g3tn/ . Unit 00 unblocked. |
 | 2026-08-30 | Unit 00 inventory. A1 lock (8 vs 5). S eligible (6 vs 5 libraries). No *CNR1* plots. |
 | 2026-08-30 | Unit 01 freeze both atlases (`research/01-frozen-labels.md`). No *CNR1* DE. Laptop RAM sufficient; Spark not used. |
+| 2026-09-01 | Unit 02 Gate C numbers (`research/02-detection.md`): 51/23172 = 0.2201% *CNR1* > 0 in frozen PT. n ≥ 100 yes; ≥ 1% no. |
+| 2026-09-01 | Human Gate C **fail** (chat: mark with recommendation). Units 03–05 not run. Converge + Decide: stop this ADPKD accession; do not dock. |
+| 2026-09-03 | Scribe report `research/07-scribe.md`. Gate C re-run 51/23172. OSF close-out packet in `docs/osf/study1-closeout.md` (human posts; do not re-register). |
 
 ## Confirmatory vs exploratory
 
 Git-sealed: do **not** edit CONFIRMATORY fields in `PROTOCOL.md` / `KILL.md` / `CLAIMS.md` except by dated amendment.  
-OSF URL is recorded. Unit 00–01 complete. Unit 01 freeze is in git. Unit 02 may run Gate C. Study 2 OSF is separate: https://osf.io/t6rzu/ .
+OSF URL is recorded. Decide 2026-09-01 is the C-fail row. Study 2 OSF is separate: https://osf.io/t6rzu/ .
 
 ## Blockers before confirmatory execution
 
@@ -59,6 +62,9 @@ Recorded: https://osf.io/7g3tn/ ([overview](https://osf.io/7g3tn/overview)). OSF
 - [x] OSF submit + URL in this file
 - [x] Unit 00 inventory (both GEO); still no *CNR1* plots
 - [x] Unit 01 freeze PT labels both atlases
-- [ ] Unit 02 Gate C
-- [ ] Do not start docking / study 3 until study 1 Decide
+- [x] Unit 02 run (`research/02-detection.md`)
+- [x] Human marks Gate C (**fail** 2026-09-01)
+- [x] Decide (C fail: stop this accession; do not dock)
+- [x] Scribe report (`research/07-scribe.md`) + OSF close-out packet (`docs/osf/study1-closeout.md`)
+- [ ] Human posts OSF comment + files on https://osf.io/7g3tn/ (do not re-register)
 - [x] Study 2 OSF (separate registration): https://osf.io/t6rzu/

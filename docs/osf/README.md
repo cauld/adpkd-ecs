@@ -9,6 +9,10 @@ Plain-text Q&A for OSF **Preregistration Template for Secondary Data Analysis (v
 
 Each file starts with OSF metadata (**Title**, **Description**, **Subject categories**, **Tags**), then Items 1–26 with **ITEM** / **ANSWER** only. The OSF Description prompt appears once, in the metadata block. Subjects are bepress names from the OSF API; type the leaf in the picker.
 
+Study 2 CLAIMS ceiling amendment posted 2026-08-31 as comment `yk2xgmj9tpd3` on https://osf.io/t6rzu/ ([`study2-osf-comment-2026-08-31-claims-amendment.txt`](study2-osf-comment-2026-08-31-claims-amendment.txt)). Not a re-registration. Frozen ITEM answers stay as submitted.
+
+Study 1 Decide close-out: [`study1-closeout.md`](study1-closeout.md). Comment draft [`study1-osf-comment-2026-09-03-decide.txt`](study1-osf-comment-2026-09-03-decide.txt). Do not re-register https://osf.io/7g3tn/ .
+
 Upload each as a file on its own OSF registration, or copy answers into the web form. Canonical science lock remains git SHA `db44b3086ae8c4d640dc40f44945bcef27ffe6bc` and the SEAL markdown files.
 
 Add your legal name and ORCID on OSF (left as placeholders below).

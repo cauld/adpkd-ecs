@@ -1,0 +1,251 @@
+
+== prereg audit: PROTOCOL.md ==
+PASS  FROZEN: first committed at 95780fa (2026-08-29)
+      INFO  STAMP: no commit hash stamped in the document (freeze derived from git history)
+FAIL  INTEGRITY: content at HEAD differs from the frozen version (95780fa):
+      3c3
+      < **Seal status:** DRAFT. After seal, do not edit sections marked CONFIRMATORY without a dated amendment in `STATUS.md`.
+      ---
+      > **Seal status:** GIT-SEALED 2026-08-30. Confirmatory content frozen at `db44b3086ae8c4d640dc40f44945bcef27ffe6bc`. After seal, do not edit sections marked CONFIRMATORY without a dated amendment in `STATUS.md`. OSF: https://osf.io/7g3tn/ (recorded in `STATUS.md` 2026-08-30).
+      5c5
+      < This protocol is **only the v1 kill test** (Pathway A: *CNR1* localization on GSE185948). Docking, dual ligands, ADMET, MQ1, DKD specificity, and bulk microarray require a new sealed protocol.
+      ---
+      > This protocol is **study 1 only**: Pathway A atlas kill (*CNR1* on GSE185948 + locked DKD specificity on GSE195460). Cannabis/CBD/tolvaptan evidence is [`studies/cannabis-safety/PROTOCOL.md`](studies/cannabis-safety/PROTOCOL.md). Docking, dual ligands, ADMET, and MQ1 stay in [`EXPLORE.md`](EXPLORE.md) until a **new** sealed protocol (study 3) after Decide.
+      7c7
+      < Human-readable brief: [`PLAN.md`](PLAN.md). If PLAN and this file disagree, **this file wins**. Briefing: [`docs/briefing/cannabinoid-adpkd-pathways.md`](docs/briefing/cannabinoid-adpkd-pathways.md) is **not** confirmatory.
+      ---
+      > Human-readable brief: [`PLAN.md`](PLAN.md). If PLAN and this file disagree, **this file wins**. Briefing: [`docs/briefing/cannabinoid-adpkd-pathways.md`](docs/briefing/cannabinoid-adpkd-pathways.md) is **not** confirmatory. Published claim under audit: Hinden et al., *Mol Med* 2026 ([doi:10.1186/s10020-026-01457-w](https://doi.org/10.1186/s10020-026-01457-w)).
+      21c21
+      < If the author metadata already contains a PT or failed-repair label, **use that label** and do not re-derive it from these genes. The gene lists are the fallback when labels are absent (Unit 00 records which path).
+      ---
+      > If the author metadata already contains a PT or failed-repair label, **use that label** and do not re-derive it from these genes. The gene lists are the fallback when labels are absent (Unit 00 records which path **per accession**).
+      23c23
+      < **Other epithelium (pooled contrast group):** labels or marker fallback containing (substring, first match): thick ascending limb / loop of Henle (`SLC12A1`), distal convoluted (`SLC12A3`), connecting / collecting (`AQP2`, `CALB1`, `SLC26A7`). Immune, endothelial, fibroblast, and parietal epithelium are **excluded** from both sides of Gate A.
+      ---
+      > **Other epithelium (pooled contrast group):** labels or marker fallback containing (substring, first match): thick ascending limb / loop of Henle (`SLC12A1`), distal convoluted (`SLC12A3`), connecting / collecting (`AQP2`, `CALB1`, `SLC26A7`). Immune, endothelial, fibroblast, and parietal epithelium are **excluded** from both sides of Gate A and Gate S.
+      25c25
+      < **Descriptive ECS panel (report; cannot pass or rescue Gate A):**
+      ---
+      > **Descriptive ECS panel (report; cannot pass or rescue Gate A or Gate S):**
+      35,38c35,40
+      < | Define states | GSE185948 snRNA. Prefer author `GSE185948_metadata_RNA.csv.gz` labels. Fallback: frozen marker assignment above. | Cell types. **No** using *CNR1* to name clusters. |
+      < | Primary confirmatory | Same object, ADPKD donors/samples as recorded in Unit 00 | Gate A/B/C on *CNR1* only |
+      < | Provenance only (Unit 00) | GEO landing page, file names, sizes, license | Reachability. No count load before Seal |
+      < | Not in v1 kill | GSE7869, GSE195460, PDB 5XRA / 6KPF / 5M4V, FAERS, ChEMBL | EXPLORE.md |
+      ---
+      > | Define states (ADPKD) | GSE185948 snRNA. Prefer author `GSE185948_metadata_RNA.csv.gz` labels. Fallback: frozen marker assignment above. | Cell types. **No** using *CNR1* to name clusters. |
+      > | Primary confirmatory (A/B/C) | Same object, ADPKD vs control as recorded in Unit 00 | Gate A/B/C on *CNR1* only |
+      > | Define states (DKD) | GSE195460 Cell Ranger `filtered_feature_bc_matrix.h5` only: `GSE195460_Control1`…`Control5`, `GSM5837792_Control6`, `GSE195460_DN1`…`DN3`, `GSM5837797_DN4`, `GSM5837799_DN5` (names as on GEO/FTP). Prefer author cell-type labels if a metadata table exists; else marker fallback. | Same freeze rules. **No** *CNR1*-named clusters. **Do not** use GSE131882 `dgecounts.rds.gz` (zUMIs) as the confirmatory matrix. **Do not** require `GSE195460_RAW.tar`. ATAC h5/fragments are exploratory. |
+      > | Specificity confirmatory (S) | Frozen DKD PT object, DKD vs control | Gate S only. **Cannot** pass Gate A. |
+      > | Provenance only (Unit 00) | GEO landing pages, file names, sizes, license | Reachability. No count load before Seal |
+      > | Not in study 1 kill | GSE7869, PDB 5XRA / 6KPF / 5M4V, FAERS, ChEMBL, Epidiolex/Jynarque labels | `EXPLORE.md` or study 2 |
+      40c42
+      < Paired snATAC (`GSE185948_count_ATAC.rds.gz`) is **exploratory**. Do not use chromatin peaks to pass Gate A.
+      ---
+      > Paired snATAC (`GSE185948_count_ATAC.rds.gz` and DKD ATAC if present) is **exploratory**. Do not use chromatin peaks to pass Gate A or Gate S.
+      41a44,45
+      > **Freeze order:** Commit frozen label maps for **both** accessions in git **before** any *CNR1* differential on **either** accession (Unit 01 before Units 02–06).
+      > 
+      44,45c48,49
+      < 1. Unit 00: record whether metadata has cell-type and disease/sample columns (column **names** only before Seal; after Seal, values for labels, not *CNR1* plots).
+      < 2. If author PT / injured-PT / failed-repair labels exist, freeze those strings in Unit 01 notes. Do **not** cluster.
+      ---
+      > 1. Unit 00: for each accession, record whether metadata has cell-type and disease/sample columns (column **names** only before Seal; after Seal, values for labels, not *CNR1* plots). Record n per disease group.
+      > 2. If author PT / injured-PT / failed-repair labels exist, freeze those strings in Unit 01 notes **per accession**. Do **not** cluster. Prefer tokens in the same family as Muto 2022 / Wilson 2022 (`PT`, `PT-1`/`PT-2`, `FR-PTC`, `N-PTC`, `PT_VCAM1`, `PCT`, `PST`, `PT_PROM1`) **only if they appear in metadata**; Unit 00 records the exact strings. Do not invent labels from the paper if the CSV uses different tokens.
+      47c51
+      < 4. Commit the frozen label mapping in git **before** any *CNR1* differential (Unit 02 before Unit 03).
+      ---
+      > 4. Do not use ADPKD *CNR1* results to choose DKD clustering, labels, or estimator.
+      51c55
+      < **Gate C:** detection = fraction of nuclei in the frozen PT / failed-repair object with `CNR1` count > 0. Thresholds in `KILL.md`.
+      ---
+      > **Gate C:** detection = fraction of nuclei in the frozen **ADPKD-atlas** PT / failed-repair object with `CNR1` count > 0. Thresholds in `KILL.md`.
+      52a57,58
+      > **C_S:** same detection definition on the frozen **DKD-atlas** PT object. Eligibility for Gate S only.
+      > 
+      55c61
+      < **Gate A estimator:**
+      ---
+      > **Gate A / Gate S estimator:**
+      57c63
+      < - If the chosen contrast has **≥ 3** samples per group: **pseudobulk** — sum counts per sample in the contrast cells, `log1p` of CPM, Welch t on sample means of *CNR1*. Pass = 95% CI excludes 0 and direction matches `KILL.md`.
+      ---
+      > - If the chosen contrast has **≥ 3** samples per group: **pseudobulk** — sum **raw** counts per sample in the contrast cells (not averaged normalized nucleus values), `log1p` of CPM, Welch t on sample means of *CNR1*. **Drop** donor × PT bins with **< 10** nuclei before the t-test (OSCA-style floor). Pass rules in `KILL.md`. This t-test is the **sole** pass metric; do not add edgeR/limma as an alternate pass route.
+      60c66
+      < **Multiple testing:** one confirmatory gene. Descriptive ECS genes: same contrast, FDR-adjusted, narrative only.
+      ---
+      > **Multiple testing:** one confirmatory gene per gate. Descriptive ECS genes: same contrast, FDR-adjusted, narrative only.
+      63a70,71
+      > **Gate S:** see `KILL.md`. Do not score all cells to pass S.
+      > 
+      72,73c80,83
+      < - Do not use university proxy for publisher PDFs.
+      < - GEO: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE185948
+      ---
+      > - Do not use university proxy for publisher PDFs. Human drops e-library PDFs if needed.
+      > - GEO ADPKD: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE185948
+      > - GEO DKD: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE195460
+      > - DGX Spark is allowed for load/compute after Seal; ARM/aarch64 build issues are operational, not a reason to change confirmatory fields.
+      74a85,96
+      > ## Sample size (fixed public n)
+      > 
+      > A1/S use the donors in the accessions (Hinden reported 8 vs 5 ADPKD/control and 5 vs 6 DKD/control; Unit 00 records actual n). These tests are powered only for **large** donor-level effects. A fail does **not** prove absence of within-PT induction.
+      > 
+      > ## Clarify (2026-08-30, before Seal)
+      > 
+      > 1. DKD confirmatory files are the GSE195460 Cell Ranger RNA h5s listed above, not GSE131882 zUMIs RDS.
+      > 2. Author label tokens are recorded in Unit 00; paper strings are a search aid only.
+      > 3. Pseudobulk floor: ≥10 nuclei per donor × PT bin.
+      > 4. Welch t remains the only confirmatory estimator when n≥3; edgeR is not a second gate.
+      > 5. Underpowered fail ≠ “ECS unchanged” (see Sample size).
+      > 
+      77c99
+      < None.
+      ---
+      > None after Seal. (2026-08-30 draft: DKD Gate S + Clarify 1–5 before Seal.)
+      Edited after freeze -> the registration no longer pre-dates the analysis it describes.
+      Every claim under it is exploratory. Pre-register a fresh test on unused data.
+FAIL  CHRONOLOGY: research/ has commits at-or-before the freeze commit:
+      95780fa 2026-08-29 09:40:58 -0600 Initial ADPKD-ECS study: SEAL kernel plus Pathway A draft.
+      Outputs existed before the prediction was locked -> the analysis is exploratory.
+WARN  CHRONOLOGY: uncommitted files under research/ — commit outputs to make their timing provable
+
+== prereg audit: KILL.md ==
+PASS  FROZEN: first committed at 95780fa (2026-08-29)
+      INFO  STAMP: no commit hash stamped in the document (freeze derived from git history)
+FAIL  INTEGRITY: content at HEAD differs from the frozen version (95780fa):
+      3c3
+      < **Purpose.** Stop or shrink the project before docking, dual-ligand design, ADMET, MQ1, or a therapeutic manuscript. Human-owned pass/fail.
+      ---
+      > **Purpose.** Stop or shrink the **atlas** project before docking, dual-ligand design, ADMET, MQ1, or a therapeutic manuscript. Human-owned pass/fail. Does not mark study 2 (cannabis/CBD safety).
+      5c5
+      < **Named confound.** Two stacked alternatives, both of which would make a CB1-antagonist-for-ADPKD pitch premature:
+      ---
+      > **Named confound.** Three stacked alternatives, any of which would make a CB1-antagonist-for-ADPKD pitch premature:
+      8a9
+      > 3. **Generic injury.** The same within-PT *CNR1* upshift appears in diabetic kidney disease, so “ADPKD-specific ECS target” is not supported by these two atlases.
+      10c11
+      < Unit 00 records whether GSE185948 includes non-ADPKD control kidneys. That decides which Gate A contrast is legal (`PROTOCOL.md`).
+      ---
+      > Unit 00 records whether GSE185948 includes non-ADPKD control kidneys (decides Gate A: A1 vs A2) and whether GSE195460 has ≥ 3 DKD and ≥ 3 control samples (decides whether Gate S is eligible).
+      12c13
+      < ## Gate C — detectability
+      ---
+      > ## Gate C — detectability (ADPKD atlas)
+      18c19
+      < **Fail if:** Detection < 1% or n < 100. Stop or reframe as “ECS dark in this atlas.” **Do not run Gate A** as a localization or disease-induction claim.
+      ---
+      > **Fail if:** Detection < 1% or n < 100. Stop or reframe as “ECS dark in this atlas.” **Do not run Gate A** as a localization or disease-induction claim. **Do not run Gate S** as a specificity claim.
+      44c45
+      < **If A fail:** Do **not** run Gate B as a therapeutic-target confirmation. Optional atlas-only note if Gate C passed.
+      ---
+      > **If A fail:** Do **not** run Gate B as a therapeutic-target confirmation. Do **not** run Gate S as a rescue. Optional atlas-only note if Gate C passed.
+      55a57,72
+      > ## Gate S — DKD specificity (cannot pass or rescue Gate A)
+      > 
+      > Run only if Gate C passed **and** Gate A1 passed **and** Unit 00 found Gate S eligible (≥ 3 DKD and ≥ 3 control samples in the DKD accession). If A1 was ineligible, Gate S is **descriptive only** and cannot support claim 5 in `CLAIMS.md`.
+      > 
+      > **States:** Freeze GSE195460 (and any GEO files Unit 00 names as the DKD count matrices) with the **same** PT / failed-repair / other-epithelium rules as GSE185948, **without** *CNR1*. Commit that freeze **before** any *CNR1* differential on **either** atlas.
+      > 
+      > **C_S (eligibility, not a pass of A):** In the frozen DKD-atlas PT / failed-repair object, *CNR1* count > 0 in ≥ 1% of nuclei **and** n ≥ 100. If C_S fails, Gate S is **ineligible** (dropout / dark ECS in this DKD object) — not an S pass.
+      > 
+      > **Contrast (if C_S eligible):** Within that frozen PT object only, *CNR1* DKD vs control. Same estimator rules as Gate A (`PROTOCOL.md`).
+      > 
+      > **S pass (specificity supported):** 95% CI for DKD − control **includes 0**, **or** the DKD mean is **not** higher.
+      > 
+      > **S fail (specificity not supported):** 95% CI **excludes 0** and the DKD mean is **higher** (same direction as A1).
+      > 
+      > **S cannot:** convert an A fail into an A pass; license cannabis or CB1 drugs; be passed using all-cell (composition) means.
+      > 
+      60,64c77,82
+      < | C pass, A1 pass | v1 localization + disease-induction path. Pathways B–D stay parked until a **new** protocol |
+      < | C pass, A2 pass (A1 ineligible) | Map-only: PT-enriched *CNR1* in ADPKD atlas; **do not** claim ADPKD-specific induction |
+      < | C pass, A fail | Negative v1; do not claim CB1 as an ADPKD PT target from this atlas |
+      < | C fail | Stop this accession; do not dock |
+      < | Protocol breach (*CNR1* defined the state) | Not confirmatory |
+      ---
+      > | C pass, A1 pass, S pass | Localization + disease-induction + DKD-not-recapitulated. Study 3 (docking) still needs a **new** protocol |
+      > | C pass, A1 pass, S fail or S ineligible | PT disease induction in ADPKD atlas; **do not** claim ADPKD-specific vs DKD from these data |
+      > | C pass, A2 pass (A1 ineligible) | Map-only: PT-enriched *CNR1* in ADPKD atlas; **do not** claim ADPKD-specific induction; S cannot save that |
+      > | C pass, A fail | Negative v1; do not claim CB1 as an ADPKD PT target from this atlas; do not dock from this Decide |
+      > | C fail | Stop this ADPKD accession; do not dock |
+      > | Protocol breach (*CNR1* defined the state; freeze order broken) | Not confirmatory |
+      68c86
+      < Docking / THCV / JD5037 (Pathway B). Dual CB1/CB2 MD (Pathway C). CYP3A4, CBD–tolvaptan, MQ1 (Pathway D). GSE7869 as primary. GSE195460 DKD specificity. Ligand assays. Wet-lab *Pkd1* mice. Clinical advice.
+      ---
+      > Docking / THCV / JD5037 (Pathway B / study 3). Dual CB1/CB2 MD (Pathway C). CYP3A4 models, MQ1 (Pathway D). CBD–tolvaptan counseling (study 2). GSE7869 as primary. Ligand assays. Wet-lab *Pkd1* mice. Clinical advice.
+      Edited after freeze -> the registration no longer pre-dates the analysis it describes.
+      Every claim under it is exploratory. Pre-register a fresh test on unused data.
+FAIL  CHRONOLOGY: research/ has commits at-or-before the freeze commit:
+      95780fa 2026-08-29 09:40:58 -0600 Initial ADPKD-ECS study: SEAL kernel plus Pathway A draft.
+      Outputs existed before the prediction was locked -> the analysis is exploratory.
+WARN  CHRONOLOGY: uncommitted files under research/ — commit outputs to make their timing provable
+
+== prereg audit: CLAIMS.md ==
+PASS  FROZEN: first committed at 95780fa (2026-08-29)
+      INFO  STAMP: no commit hash stamped in the document (freeze derived from git history)
+FAIL  INTEGRITY: content at HEAD differs from the frozen version (95780fa):
+      4a5,6
+      > This file is **study 1 only** (atlas kill). Study 2 claims live in [`studies/cannabis-safety/CLAIMS.md`](studies/cannabis-safety/CLAIMS.md). Do not import those sentences here.
+      > 
+      10a13,14
+      > 5. **If A1 passed and Gate S passed:** under the same freeze, the within-PT *CNR1* ADPKD-vs-control upshift is **not** recapitulated as DKD-vs-control in GSE195460 — a **specificity** claim, not a proof that CB1 causes cysts.
+      > 6. **If A1 passed and Gate S failed:** do **not** claim ADPKD-specific *CNR1* induction from these atlases.
+      12c16
+      < A **negative** on A1/A2 is still a complete v1 if Gate C holds: the briefing’s PT-restricted, disease-induced *CNR1* story is reported as not supported in this atlas.
+      ---
+      > A **negative** on A1/A2 is still a complete v1 if Gate C holds: the briefing’s PT-restricted, disease-induced *CNR1* story is reported as not supported in the ADPKD atlas. Gate S is then **not** run as a rescue.
+      19,20c23,24
+      < - CBD is contraindicated or indicated with tolvaptan.
+      < - Synthetic cannabinoid AKI epidemiology.
+      ---
+      > - CBD is contraindicated or indicated with tolvaptan (study 2 may map **uncertainty**; it still may not convert this paper into a DDI claim).
+      > - Synthetic cannabinoid AKI epidemiology as a confirmatory result of this atlas.
+      22c26
+      < - GSE7869, GSE195460, or PDB files as confirmatory for v1.
+      ---
+      > - GSE7869 or PDB files as confirmatory for v1.
+      23a28,29
+      > - Gate S pass as proof that ECS dysregulation is unique to ADPKD among all CKD.
+      > - A Gate A or Gate S **fail** as proof that *CNR1* is unchanged (public n is a large-effect test only).
+      27c33
+      < A careful public-atlas test of the briefing’s *CNR1* claim is still the paper, reported negative if Gate A fails.
+      ---
+      > A careful public-atlas audit of the published *CNR1* map is still the paper, reported negative if Gate A fails.
+      Edited after freeze -> the registration no longer pre-dates the analysis it describes.
+      Every claim under it is exploratory. Pre-register a fresh test on unused data.
+FAIL  CHRONOLOGY: research/ has commits at-or-before the freeze commit:
+      95780fa 2026-08-29 09:40:58 -0600 Initial ADPKD-ECS study: SEAL kernel plus Pathway A draft.
+      Outputs existed before the prediction was locked -> the analysis is exploratory.
+WARN  CHRONOLOGY: uncommitted files under research/ — commit outputs to make their timing provable
+
+== prereg audit: QUESTION.md ==
+PASS  FROZEN: first committed at 95780fa (2026-08-29)
+      INFO  STAMP: no commit hash stamped in the document (freeze derived from git history)
+FAIL  INTEGRITY: content at HEAD differs from the frozen version (95780fa):
+      3c3
+      < **One sentence.** In public adult ADPKD snRNA-seq (GSE185948), is *CNR1* expression enriched in a **frozen** proximal-tubule / failed-repair epithelial state relative to other renal epithelium, after a composition check that would kill a whole-kidney-only story?
+      ---
+      > **One sentence.** After freezing proximal-tubule / failed-repair epithelium **without** *CNR1* as a marker, is *CNR1* higher in ADPKD than in control **inside that state** in GSE185948 (after a composition check), and is that within-PT induction **absent** in diabetic kidney disease under the same freeze (GSE195460)?
+      5c5
+      < **Why this question.** A briefing argues that ADPKD is a metabolic–fibrotic disease with ECS collapse: *CNR1* up in failed-repair proximal tubule, ligands down, and CB1 as a maladaptive driver rather than a cAMP brake. That claim is the gate for every later cannabinoid-therapeutic idea (peripheral CB1 block, CB2 agonism, THCV analogs, MQ1 combinations). If *CNR1* is not cell-type-restricted in the named public atlas, the therapeutic story should shrink or stop before docking or mouse work.
+      ---
+      > **Why this question.** A 2026 paper and the source briefing treat PT-restricted, ADPKD-specific *CNR1* upregulation as the license for later CB1-antagonist chemistry. Their snRNA-seq primary statistic averaged *CNR1* across all cell types per sample. This study is a registered audit of that map: frozen states, within-PT disease contrast, composition wall, and a locked DKD specificity contrast. If the map fails, docking stays parked. If it passes, it is still not a treatment claim.
+      7c7
+      < **What this is not.** A test of whether patients should take cannabis, CBD, THCV, or rimonabant. A docking campaign. A V2R / tolvaptan / MQ1 trial. A claim that CB1 antagonism treats ADPKD.
+      ---
+      > **What this is not.** A test of whether patients should take cannabis, CBD, THCV, or rimonabant. A CBD–tolvaptan interaction study (that is [`studies/cannabis-safety/`](studies/cannabis-safety/)). A docking campaign. A claim that CB1 antagonism treats ADPKD.
+      9c9
+      < **Success for v1 (solo computational paper).** A **frozen** cell-state definition that does not use *CNR1* as a marker, plus a pre-specified test that *CNR1* either **is** or **is not** restricted to that state (and is not explained by cluster abundance alone). A clean negative is a complete v1: later pathways stay in `EXPLORE.md`.
+      ---
+      > **Success for v1 (solo computational paper).** Frozen cell-state definitions that do not use *CNR1* as a marker, on **both** accessions, committed before any *CNR1* differential; plus pre-specified tests that *CNR1* either **is** or **is not** induced in ADPKD PT, **is** or **is not** explained by cluster abundance alone, and **is** or **is not** recapitulated in DKD PT. A clean negative is a complete v1. Chemistry (study 3) waits on Decide.
+      Edited after freeze -> the registration no longer pre-dates the analysis it describes.
+      Every claim under it is exploratory. Pre-register a fresh test on unused data.
+FAIL  CHRONOLOGY: research/ has commits at-or-before the freeze commit:
+      95780fa 2026-08-29 09:40:58 -0600 Initial ADPKD-ECS study: SEAL kernel plus Pathway A draft.
+      Outputs existed before the prediction was locked -> the analysis is exploratory.
+WARN  CHRONOLOGY: uncommitted files under research/ — commit outputs to make their timing provable
+
+RESULT: FAIL (8 failed check(s), 4 warning(s))
+A failed audit means the confirmatory label cannot be defended.
+Report the affected analyses as exploratory, or pre-register a fresh test on unused data.

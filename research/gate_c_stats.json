@@ -1,0 +1,16 @@
+{
+  "n_PT": 23172,
+  "n_CNR1_pos": 51,
+  "frac_pos": 0.0022009322,
+  "cnr1_max_in_pt": 1.8376046459,
+  "n_all_nuclei": 102710,
+  "n_CNR1_pos_all_nuclei": 247,
+  "threshold_frac": 0.01,
+  "threshold_n": 100,
+  "n_ge_100": true,
+  "frac_ge_1pct": false,
+  "numbers_meet_KILL_Gate_C_rule": false,
+  "human_marks_gate": true,
+  "dkd_loaded": false,
+  "cnr1_used_to_define_PT": false
+}

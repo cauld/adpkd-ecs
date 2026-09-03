@@ -19,14 +19,18 @@ Not confirmatory. Check off in git when done.
 - [x] Clarify / Analyze in that study’s `STATUS.md`
 - [x] Human git Seal 2026-08-30 (`db44b30`)
 - [x] Separate OSF prereg URL: https://osf.io/t6rzu/
+- [x] Units 00–04; Gates R/L/T/U pass; Decide complete v1 (2026-08-31)
 
 ## After study 1 OSF
 
 - [x] Unit 00 inventory (`research/data-inventory.md`) — both GEO accessions
 - [x] Unit 01 freeze (`research/01-frozen-labels.md`)
-- [ ] Units 02–06; human marks C/A/B/S; Decide
+- [x] Unit 02 numbers (`research/02-detection.md`)
+- [x] Human Gate C fail + Decide 2026-09-01 (`DECIDE.md`)
+- [x] Scribe + OSF close-out packet 2026-09-03 (`research/07-scribe.md`, `docs/osf/study1-closeout.md`)
+- [ ] Human posts that packet on https://osf.io/7g3tn/
 
-## Not until study 1 Decide
+## Not until a new study 3 protocol
 
-- [ ] Study 3 / Pathways B–D (`EXPLORE.md`)
+- [ ] Study 3 / Pathways B–D (`EXPLORE.md`) — not licensed from study 1 C-fail Decide
 - [ ] ecs-lab Scout harvest duplication

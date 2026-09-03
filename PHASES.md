@@ -21,17 +21,17 @@ Units in `units/` (Operator). Order is dependency order.
 
 0. Inventory (both GEO landing pages, metadata columns, sample n) — **done 2026-08-30**, no *CNR1* plots  
 1. Freeze PT / failed-repair labels on **both** atlases — **done 2026-08-30** (in git)  
-2. Gate C detection (ADPKD)  
-3. Gate A (*CNR1*)  
-4. Gate B diagnostics  
-5. Gate S (DKD), if A1 passed  
-6. Converge + Decide  
+2. Gate C detection (ADPKD) — **fail 2026-09-01** (51/23172 = 0.2201%)  
+3. Gate A (*CNR1*) — **skipped** (C fail)  
+4. Gate B diagnostics — **skipped** (C fail)  
+5. Gate S (DKD), if A1 passed — **skipped** (C fail)  
+6. Converge + Decide — **done 2026-09-01** (`DECIDE.md`)
 
-**Exit:** human Decide per `KILL.md`.
+**Exit:** human Decide per `KILL.md`. **C fail:** stop this ADPKD accession; do not dock.
 
 ## Phase 2 — After Decide
 
-Stop / map-only / induction ± specificity — as in `KILL.md`. Study 3 (docking) needs a **new** sealed protocol (`EXPLORE.md`). Study 2 is independent (`studies/cannabis-safety/`).
+**This study:** stop this accession. Scribe ≤ `CLAIMS.md` / `DECIDE.md`. Study 3 (docking) is **not** licensed from this Decide (`EXPLORE.md`). Study 2 is independent (`studies/cannabis-safety/`).
 
 ## Deferred (not this study)
 

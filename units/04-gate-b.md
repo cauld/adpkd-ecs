@@ -1,7 +1,7 @@
 ---
 id: 04
 role: Operator
-status: blocked-until-osf
+status: skipped-c-fail
 reads:
   - PROTOCOL.md
   - KILL.md
@@ -20,4 +20,4 @@ must_not:
 
 ## Notes (after run)
 
-- Not run.
+- Not run. Gate C fail 2026-09-01. Gate B only if A passed.

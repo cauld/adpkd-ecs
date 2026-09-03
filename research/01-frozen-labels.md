@@ -72,4 +72,4 @@ Both accessions frozen below. Units 02–06 may use these maps. Do not edit this
 - Immune/endothelial/stroma excluded from Gate A and Gate S sides: **yes** (author tokens on GSE185948; unassigned remainder on GSE195460).
 - **Unit 01 pass: True**
 
-No Gate C/A/B/S numbers. Next: Unit 02 detection (*CNR1* count > 0 inside the frozen ADPKD PT object).
+No Gate C/A/B/S numbers were computed in this unit. Unit 02 detection is in `research/02-detection.md`.

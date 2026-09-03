@@ -7,7 +7,7 @@ Chat shorthand: **Explore → Question → Kill → Protocol → Clarify → Ana
 
 Science Superpowers maps onto those stages: [`docs/SUPERPOWERS.md`](docs/SUPERPOWERS.md).
 
-**You are here:** see `STATUS.md`. Protocol **GIT-SEALED**. OSF: https://osf.io/7g3tn/ . Unit 01 freeze in git. Next: Unit 02 Gate C.
+**You are here:** see `STATUS.md`. Protocol **GIT-SEALED**. OSF: https://osf.io/7g3tn/ . **Decide 2026-09-01:** Gate C fail. Stop this ADPKD accession; do not dock.
 
 ---
 

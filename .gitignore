@@ -11,4 +11,8 @@ pipeline/output/
 *.rda
 .ipynb_checkpoints/
 .worktrees/
+
+# Secrets — never commit (OSF tokens, etc.)
 .env
+.env.*
+!.env.example

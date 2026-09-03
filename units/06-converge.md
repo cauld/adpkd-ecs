@@ -1,7 +1,7 @@
 ---
 id: 06
 role: Operator
-status: blocked-until-osf
+status: done
 reads:
   - KILL.md
   - PROTOCOL.md
@@ -21,4 +21,5 @@ must_not:
 
 ## Notes (after run)
 
-- Not run.
+- Ran 2026-09-01. Output: `research/06-converge.md`. Human Decide: [`DECIDE.md`](../DECIDE.md) and `KILL.md` Human marks (C fail).
+- Units 03–05 skipped. CONFIRMATORY fields not edited to match figures. Study 2 language not imported.

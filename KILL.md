@@ -84,3 +84,11 @@ Run only if Gate C passed **and** Gate A1 passed **and** Unit 00 found Gate S el
 ## Explicitly not in the kill
 
 Docking / THCV / JD5037 (Pathway B / study 3). Dual CB1/CB2 MD (Pathway C). CYP3A4 models, MQ1 (Pathway D). CBD–tolvaptan counseling (study 2). GSE7869 as primary. Ligand assays. Wet-lab *Pkd1* mice. Clinical advice.
+
+## Human marks (2026-09-01)
+
+Not a protocol amendment. Gate C 1% / 100 and the Decide table above are unchanged.
+
+- **Gate C: fail** (chat: mark with recommendation). Detection 51 / 23172 = 0.2201% in frozen PT (`research/02-detection.md`). n ≥ 100; fraction < 1%.
+- **Gates A, B, S: not run** (C fail).
+- **Decide: C fail** — stop this ADPKD accession; do not dock. Record: [`DECIDE.md`](DECIDE.md).
