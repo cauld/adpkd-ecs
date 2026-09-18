@@ -34,6 +34,6 @@ CLAIMS-ceiling comment: `yk2xgmj9tpd3` (2026-08-31). Decide/scribe comment: `nfu
 - Secrets (`.env`, OSF tokens)
 - FAERS extracts, docking, CYP models
 
-## 4. After you post
+## 4. Posted
 
-Record file GUIDs (if any) in `studies/cannabis-safety/STATUS.md`. Scribe remains [`REPORT.md`](../../studies/cannabis-safety/REPORT.md).
+Comments `yk2xgmj9tpd3` and `nfuzbgxwpakv` on https://osf.io/t6rzu/ . Scribe remains [`REPORT.md`](../../studies/cannabis-safety/REPORT.md).
