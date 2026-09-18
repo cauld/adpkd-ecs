@@ -5,23 +5,13 @@
 
 **Results git SHA.** `857d872c3b986dcc65f2aafae386680c2d651e62` (Decide + numbers + this packet). Protocol freeze remains `db44b30`.
 
-## 1. Comment (required)
+## 1. Comment (posted 2026-09-18)
 
-Paste [`study1-osf-comment-2026-09-03-decide.txt`](study1-osf-comment-2026-09-03-decide.txt) as a **registration comment** on https://osf.io/7g3tn/ .
+Posted as comment `nqwkh6jmruxd` on https://osf.io/7g3tn/ (text: [`study1-osf-comment-2026-09-03-decide.txt`](study1-osf-comment-2026-09-03-decide.txt)). **Do not** re-register.
 
-Optional API (token with `osf.nodes_write`; do not commit it):
+## 2. File archive (git; OSF files locked)
 
-```bash
-export OSF_TOKEN='...'
-curl -sS -X POST 'https://api.osf.io/v2/registrations/7g3tn/comments/' \
-  -H "Authorization: Bearer $OSF_TOKEN" \
-  -H 'Content-Type: application/vnd.api+json' \
-  -d @docs/osf/study1-osf-comment-2026-09-03-decide.json
-```
-
-## 2. Files to upload (required)
-
-On the same registration, **Files** → upload these (plain text / markdown / JSON only). Do **not** upload GEO count matrices, RDS, h5, or `.env`.
+**Blocked 2026-09-18.** OSF WaterButler returned `400 Registered Nodes are immutable`. These files stay in **git** (do not upload GEO counts):
 
 | File | Why |
 |---|---|
@@ -46,3 +36,5 @@ On the same registration, **Files** → upload these (plain text / markdown / JS
 ## 4. After you post
 
 Record the OSF comment ID in `STATUS.md` (same as study 2 `yk2xgmj9tpd3`). Wiki optional: one sentence pointing at the comment + `DECIDE.md`.
+
+**Posted.** Comment `nqwkh6jmruxd` (2026-09-18T18:19:35Z). Files stay in git.

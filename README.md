@@ -8,7 +8,7 @@ This git tree is the **program**. Each confirmatory question is its own seal.
 |---|---|---|
 | **1 — Atlas kill** (this directory’s root SEAL files) | Frozen *CNR1* in ADPKD PT (GSE185948) + DKD specificity (GSE195460) | GIT-SEALED; [OSF](https://osf.io/7g3tn/); **Decide 2026-09-01: C fail** |
 | **2 — Safety map** | [`studies/cannabis-safety/`](studies/cannabis-safety/) — plant vs CBD vs synthetics vs CB1 drugs; Jynarque / Epidiolex | GIT-SEALED; [OSF](https://osf.io/t6rzu/); **v1 map complete** (Decide 2026-08-31) |
-| **3 — Chemistry** | Docking / ADMET | Parked in [`EXPLORE.md`](EXPLORE.md) until study 1 Decide |
+| **3 — Chemistry** | Docking / ADMET | Parked in [`EXPLORE.md`](EXPLORE.md). Study 1 Decide (C fail) does **not** license docking. |
 
 | Read first | What it is |
 |---|---|

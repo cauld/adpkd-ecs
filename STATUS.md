@@ -8,7 +8,7 @@
 **OSF URL:** https://osf.io/7g3tn/ ([overview](https://osf.io/7g3tn/overview))  
 **Current stage:** After Decide. Gate C **fail**. Stop this ADPKD accession; do not dock. Scribe ≤ [`CLAIMS.md`](CLAIMS.md) and [`DECIDE.md`](DECIDE.md).  
 **Decision:** C fail — stop this ADPKD accession; do not dock (2026-09-01)  
-**Superpowers:** Framing approved. Survey and plan frozen with protocol. Study 1 OSF URL recorded 2026-08-30. Units 00–02 ran. C fail + Decide 2026-09-01. Scribe report 2026-09-03. OSF results packet ready (human posts).  
+**Superpowers:** Framing approved. Survey and plan frozen with protocol. Study 1 OSF URL recorded 2026-08-30. Units 00–02 ran. C fail + Decide 2026-09-01. Scribe report 2026-09-03. OSF Decide comment posted 2026-09-18 (`nqwkh6jmruxd`). File upload to the registration is impossible (immutable).  
 **Sibling:** [`studies/cannabis-safety/`](studies/cannabis-safety/) — v1 map complete (Decide 2026-08-31); do not import its claims here
 
 ## Ledger
@@ -27,6 +27,7 @@
 | 2026-09-01 | Unit 02 Gate C numbers (`research/02-detection.md`): 51/23172 = 0.2201% *CNR1* > 0 in frozen PT. n ≥ 100 yes; ≥ 1% no. |
 | 2026-09-01 | Human Gate C **fail** (chat: mark with recommendation). Units 03–05 not run. Converge + Decide: stop this ADPKD accession; do not dock. |
 | 2026-09-03 | Scribe report `research/07-scribe.md`. Gate C re-run 51/23172. OSF close-out packet in `docs/osf/study1-closeout.md` (human posts; do not re-register). |
+| 2026-09-18 | OSF Decide comment posted on https://osf.io/7g3tn/ (`nqwkh6jmruxd`). File PUT rejected (registered nodes immutable). Archive is git. |
 
 ## Confirmatory vs exploratory
 
@@ -66,5 +67,5 @@ Recorded: https://osf.io/7g3tn/ ([overview](https://osf.io/7g3tn/overview)). OSF
 - [x] Human marks Gate C (**fail** 2026-09-01)
 - [x] Decide (C fail: stop this accession; do not dock)
 - [x] Scribe report (`research/07-scribe.md`) + OSF close-out packet (`docs/osf/study1-closeout.md`)
-- [ ] Human posts OSF comment + files on https://osf.io/7g3tn/ (do not re-register)
+- [x] OSF Decide comment posted 2026-09-18 (`nqwkh6jmruxd` on https://osf.io/7g3tn/; do not re-register). Files stay in git (registration immutable).
 - [x] Study 2 OSF (separate registration): https://osf.io/t6rzu/

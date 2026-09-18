@@ -28,7 +28,7 @@ Not confirmatory. Check off in git when done.
 - [x] Unit 02 numbers (`research/02-detection.md`)
 - [x] Human Gate C fail + Decide 2026-09-01 (`DECIDE.md`)
 - [x] Scribe + OSF close-out packet 2026-09-03 (`research/07-scribe.md`, `docs/osf/study1-closeout.md`)
-- [ ] Human posts that packet on https://osf.io/7g3tn/
+- [x] OSF Decide comment on https://osf.io/7g3tn/ (`nqwkh6jmruxd`, 2026-09-18)
 
 ## Not until a new study 3 protocol
 

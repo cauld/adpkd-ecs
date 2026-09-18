@@ -28,6 +28,7 @@
 | 2026-08-31 | Human applied gate recommendations (chat). **L pass.** **T pass** (four headings, not a full CB1/OTC census). **U pass** (pair unstudied). **Decide: complete v1 map.** Paywalled PDFs not needed. |
 | 2026-08-31 | OSF CLAIMS-amendment comment posted on https://osf.io/t6rzu/ (comment `yk2xgmj9tpd3`, 2026-08-31T19:26:50Z). Not a re-registration. Scribe follows git `CLAIMS.md`. |
 | 2026-09-03 | Scribe write-up [`REPORT.md`](REPORT.md). Confirmatory vs exploratory separated. No query expansion. |
+| 2026-09-18 | OSF Decide/scribe comment posted (`nfuzbgxwpakv`). File PUT rejected (registered nodes immutable). Archive is git + comments `yk2xgmj9tpd3` and `nfuzbgxwpakv`. |
 
 ## Blockers before confirmatory execution
 
@@ -65,3 +66,4 @@ CLAIMS amendment comment posted 2026-08-31T19:26:50Z on https://osf.io/t6rzu/ (i
 - [x] Paywalled PDFs — none required for v1
 - [x] OSF comment on CLAIMS amendment (posted 2026-08-31; comment `yk2xgmj9tpd3` on https://osf.io/t6rzu/)
 - [x] Scribe ≤ `CLAIMS.md` ([`REPORT.md`](REPORT.md), 2026-09-03)
+- [x] OSF Decide/scribe comment posted 2026-09-18 (`nfuzbgxwpakv`). Files stay in git (registration immutable).
