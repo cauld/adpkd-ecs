@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ADPKD-ECS — lay summary</title>
+  <style>
+    @page { size: letter; margin: 0.7in 0.75in; }
+    * { box-sizing: border-box; }
+    body {
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+      font-size: 11.5pt;
+      line-height: 1.45;
+      color: #1a1a1a;
+      max-width: 7in;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 16pt;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin: 0 0 0.15em;
+    }
+    .lede {
+      font-size: 10.5pt;
+      color: #333;
+      margin: 0 0 1.1em;
+    }
+    h2 {
+      font-size: 12.5pt;
+      font-weight: 600;
+      margin: 1.15em 0 0.35em;
+      padding-top: 0.45em;
+      border-top: 1px solid #ccc;
+    }
+    p { margin: 0 0 0.7em; }
+    p.idea, p.did, p.out { margin-bottom: 0.45em; }
+    .label {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 9pt;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #444;
+    }
+    a { color: #0b57d0; text-decoration: underline; }
+    .links {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 10pt;
+      line-height: 1.55;
+      margin: 0.6em 0 0;
+    }
+    .links div { margin: 0.15em 0; }
+    footer {
+      margin-top: 1.3em;
+      padding-top: 0.55em;
+      border-top: 1px solid #ccc;
+      font-size: 9pt;
+      color: #444;
+    }
+    footer p { margin: 0 0 0.4em; }
+  </style>
+</head>
+<body>
+  <h1>ADPKD-ECS: what we asked, and what we found</h1>
+  <p class="lede">A short summary for a general reader. This was a laptop research program on cannabis-related questions in ADPKD (the inherited kidney-cyst disease), using only public data. It asked two separate questions. It is <strong>not</strong> advice to start or stop cannabis, CBD, or prescription drugs.</p>
+
+  <h2>Study 1 — Is the cannabis receptor gene easy to see in the kidney cells that matter?</h2>
+  <p class="idea"><span class="label">Idea.</span> Some papers suggest CB1 (the gene <em>CNR1</em>) is active in the kidney tubes that fail in ADPKD. Before testing “is it higher in disease?”, we locked a simple check: in publicly shared single-cell data, is <em>CNR1</em> even detectable in those tube cells at a pre-set floor (at least 1% of cells, and enough cells counted)?</p>
+  <p class="did"><span class="label">What we did.</span> We froze the cell labels <strong>without</strong> using <em>CNR1</em> as a marker, then counted how often the gene showed up in 23,172 proximal-tubule nuclei from dataset GSE185948.</p>
+  <p class="out"><span class="label">Outcome.</span> It showed up in <strong>51 cells (0.22%)</strong>. That is below the 1% floor we had already written down. We stopped. We did <strong>not</strong> test whether it is higher in ADPKD than in healthy kidney, and we did <strong>not</strong> start computer drug-docking. This does <strong>not</strong> mean the receptor is absent from the kidney. It means this particular public map was too sparse to support the next claims.</p>
+  <div class="links">
+    <div>Write-up: <a href="https://github.com/cauld/adpkd-ecs/blob/main/research/07-scribe.md">https://github.com/cauld/adpkd-ecs/blob/main/research/07-scribe.md</a></div>
+    <div>Preregistration: <a href="https://osf.io/7g3tn/">https://osf.io/7g3tn/</a></div>
+  </div>
+
+  <h2>Study 2 — What can we actually say about cannabis/CBD with ADPKD and tolvaptan (Jynarque)?</h2>
+  <p class="idea"><span class="label">Idea.</span> People with ADPKD sometimes use cannabis or CBD for pain. Kidney guidelines already say to ask about cannabis. Informal notes had overstated CBD as a proven problem with Jynarque. We locked a map in advance: plant cannabis, CBD, synthetic cannabinoids, and CB1 <em>drugs</em> must stay separate; CBD + Jynarque is “unstudied” unless a real pair study or a named label interaction shows up.</p>
+  <p class="did"><span class="label">What we did.</span> We searched a frozen ClinicalTrials.gov query, quoted the 2025 KDIGO guideline, and read the FDA labels for Jynarque and Epidiolex (prescription CBD). We did not download patient gene-count files for this study.</p>
+  <p class="out"><span class="label">Outcome.</span> No matching ADPKD + cannabis/cannabinoid <strong>trial</strong> in that frozen search. KDIGO: ask about cannabis; <strong>not recommended</strong> as treatment (no shown benefit; possible kidney-injury risk from contamination/synthetics). The two labels <strong>do not name each other</strong>. Jynarque is broken down almost entirely by CYP3A and has a boxed liver warning. Epidiolex did not change a midazolam (CYP3A) probe; it can raise some other oral drugs. CBD + tolvaptan stays <strong>unstudied</strong> — not proven safe, not labeled as contraindicated. Analog results (midazolam, everolimus, grapefruit) are <strong>not</strong> a study of that pair.</p>
+  <div class="links">
+    <div>Write-up: <a href="https://github.com/cauld/adpkd-ecs/blob/main/studies/cannabis-safety/REPORT.md">https://github.com/cauld/adpkd-ecs/blob/main/studies/cannabis-safety/REPORT.md</a></div>
+    <div>Preregistration: <a href="https://osf.io/t6rzu/">https://osf.io/t6rzu/</a></div>
+  </div>
+
+  <h2>The whole program</h2>
+  <p>There is no journal article. The two write-ups above are the public reports. Both studies live in one repository:</p>
+  <div class="links">
+    <div>Repository: <a href="https://github.com/cauld/adpkd-ecs">https://github.com/cauld/adpkd-ecs</a></div>
+  </div>
+
+  <footer>
+    <p>Not medical advice. Do not use this summary to start, stop, or change cannabis, CBD, Jynarque, Epidiolex, or any other treatment. Study 1 does not show that CB1 is absent from the kidney. Study 2 does not show that CBD is safe or contraindicated with tolvaptan.</p>
+    <p>ADPKD-ECS · 18 September 2026 · study text CC BY 4.0 · third-party datasets keep their original licenses</p>
+  </footer>
+</body>
+</html>
